@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Breeti Bandyopadhyay</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/a2e0e6ad67.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <div class="nav">
+    <button class="active" onclick="showPanel('about')">About Me</button>
+    <button onclick="showPanel('projects')">Projects</button>
+    <button onclick="showPanel('research')">Research</button>
+    <button onclick="showPanel('resume')">Resume</button>
+  </div>
+
+  <!-- Main Layout -->
+  <div class="container">
+
+    <!-- LEFT PANEL -->
+    <div class="left">
+    
+      <div class="imgwrapper">
+        <img src="profile.png" alt="Breeti Bandyopadhyay" />
+      </div>
+
+    </div>
+
+    <!-- DIVIDER -->
+    <div class="divider"></div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right">
+
+      <section id="about" class="panel active">
+        <h1>Hi! I’m Breeti Bandyopadhyay</h1>
+        <p>
+          I’m a student exploring Machine Learning and AI, interested in how data,
+          models, and thoughtful design come together to solve real problems.
+        </p>
+        <p>
+          Currently studying at Shiv Nadar University, with a focus on ML, data
+          analysis, and continuous learning.
+        </p>
+      </section>
+
+      <section id="projects" class="panel">
+        <h1>Projects</h1>
+        <p>Selected ML and AI projects.</p>
+      </section>
+
+      <section id="research" class="panel">
+        <h1>Research</h1>
+        <p>Research interests, papers read, and experiments.</p>
+      </section>
+
+      <section id="resume" class="panel">
+        <h1>Resume</h1>
+        <a href="resume.pdf" target="_blank">Download Resume</a>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

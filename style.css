@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: #fdebed;
+  color: #5a2a44;
+}
+
+.nav {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+
+.nav button {
+  background: none;
+  border: 2px solid #2b2b2b;
+  border-radius: 20px;
+  padding: 8px 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.nav button.active {
+  background: #5a2a44;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  padding: 100px;
+  box-sizing: border-box;
+}
+
+.left {
+  width: 20%;
+  display: flex;            /* make it a flex container */
+  flex-direction: column;   /* stack children vertically */
+ /* vertical centering */
+  align-items: center;      /* horizontal centering */            /* full viewport height */
+}
+
+.imgwrapper {
+  padding-top: 60px;
+}
+
+.left img {
+  max-width: 80%;   /* max width relative to container */
+  max-height: 80vh; /* limits height relative to viewport */
+  
+  object-fit: contain; 
+  border-radius: 30px;
+}
+
+.profiles {
+  margin-top: 20px;
+}
+
+.profiles a {
+  color: #000;
+  margin: 0 10px;
+  font-size: 22px;
+}
+
+.divider {
+  width: 7px;
+  background: #2b2b2b;
+  margin: 0 38px;
+}
+
+.right {
+  width: 50%;
+  position: relative;
+  top: 30%;
+}
+
+.panel {
+  display: none;
+}
+
+.panel.active {
+  display: block;
+}

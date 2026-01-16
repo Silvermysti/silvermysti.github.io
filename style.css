@@ -5,6 +5,12 @@ body {
   color: #e7e7e7;
 }
 
+
+.highlight{
+  color:#ff8575;
+  font-weight:bold;
+}
+
 .nav {
   position: absolute;
   top: 30px;

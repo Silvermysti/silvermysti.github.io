@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Breeti Bandyopadhyay</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<!-- Hidden SVG sprite — all icons inline, no CDN needed -->
+<svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="ico-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></symbol>
+  <symbol id="ico-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><line x1="12" y1="12" x2="12" y2="12.01"/><path d="M2 13a20 20 0 0 0 20 0"/></symbol>
+  <symbol id="ico-flask" viewBox="0 0 24 24"><path d="M9 3h6M9 3v7l-5 9a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1l-5-9V3"/><line x1="6.5" y1="15" x2="17.5" y2="15"/></symbol>
+  <symbol id="ico-code" viewBox="0 0 24 24"><polyline points="7 8 3 12 7 16"/><polyline points="17 8 21 12 17 16"/><line x1="14" y1="4" x2="10" y2="20"/></symbol>
+  <symbol id="ico-trophy" viewBox="0 0 24 24"><line x1="12" y1="17" x2="12" y2="21"/><line x1="8" y1="21" x2="16" y2="21"/><path d="M5 3h14M5 3a7 7 0 0 0 7 7 7 7 0 0 0 7-7"/><path d="M5 3C4 9 7 13 12 10c5 3 8-1 7-7"/></symbol>
+  <symbol id="ico-school" viewBox="0 0 24 24"><path d="M22 9L12 5 2 9l10 4z"/><path d="M6 10.6V16a6 6 0 0 0 12 0v-5.4"/><path d="M22 9v6"/></symbol>
+  <symbol id="ico-cpu" viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="1"/><path d="M9 7V4M12 7V4M15 7V4M9 20v-3M12 20v-3M15 20v-3M7 9H4M7 12H4M7 15H4M20 9h-3M20 12h-3M20 15h-3"/><rect x="2" y="2" width="20" height="20" rx="3"/></symbol>
+  <symbol id="ico-users" viewBox="0 0 24 24"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/><path d="M21 21v-2a4 4 0 0 0-3-3.85"/></symbol>
+  <symbol id="ico-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></symbol>
+  <symbol id="ico-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+  <symbol id="ico-map-pin" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+  <symbol id="ico-github" viewBox="0 0 24 24"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></symbol>
+  <symbol id="ico-linkedin" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="4"/><line x1="8" y1="11" x2="8" y2="16"/><line x1="8" y1="8" x2="8" y2="8.01"/><line x1="12" y1="16" x2="12" y2="11"/><path d="M16 16v-3a2 2 0 0 0-4 0"/></symbol>
+  <symbol id="ico-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></symbol>
+  <symbol id="ico-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
+  <symbol id="ico-download" viewBox="0 0 24 24"><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/><polyline points="7 11 12 16 17 11"/><line x1="12" y1="4" x2="12" y2="16"/></symbol>
+  <symbol id="ico-mouse" viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="6"/><line x1="12" y1="7" x2="12" y2="11"/></symbol>
+  <symbol id="ico-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+</svg>
+<style>
+.ico { display:inline-flex; align-items:center; justify-content:center; flex-shrink:0; }
+.ico svg { stroke:currentColor; fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; display:block; overflow:visible; }
+</style>
+<style>
+
+/* ── TOKENS ── */
+:root {
+  --font-sans: 'DM Sans', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+}
+
+[data-theme="dark"] {
+  --bg:        #1a1c22;
+  --bg-deeper: #14161c;
+  --bg-card:   #14161c;
+  --border:    #222430;
+  --border-hi: #a05068;
+  --text-hi:   #eceaf4;
+  --text-body: #b8bcd0;
+  --text-mid:  #9094a8;
+  --text-dim:  #505468;
+  --text-faint:#303448;
+  --accent:    #e8809c;
+  --accent-dk: #a05068;
+  --chip-bg:   #1e1428;
+  --tag-bg:    #1a1c22;
+  --tag-border:#2e3040;
+  --tag-text:  #b0b4c8;
+  --nav-active:#1c1428;
+  --badge-bg:  #1e1428;
+}
+
+[data-theme="light"] {
+  --bg:        #faf6ef;
+  --bg-deeper: #f2ece0;
+  --bg-card:   #f2ece0;
+  --border:    #e0d8c8;
+  --border-hi: #e8a0b8;
+  --text-hi:   #2a1f14;
+  --text-body: #3a2818;
+  --text-mid:  #6a5040;
+  --text-dim:  #9a8070;
+  --text-faint:#b09878;
+  --accent:    #c03060;
+  --accent-dk: #c03060;
+  --chip-bg:   #fce8ef;
+  --tag-bg:    #faf6ef;
+  --tag-border:#d8d0c0;
+  --tag-text:  #5a4030;
+  --nav-active:#fce8ef;
+  --badge-bg:  #fce8ef;
+}
+
+/* ── RESET ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { height: 100%; }
+body { font-family: var(--font-sans); background: var(--bg); color: var(--text-hi); min-height: 100%; }
+
+/* ── FLUID TYPE SCALE ── */
+:root {
+  --t-xs:   clamp(0.7rem,  0.65rem + 0.2vw,  0.8rem);
+  --t-sm:   clamp(0.8rem,  0.75rem + 0.25vw, 0.9rem);
+  --t-base: clamp(0.875rem,0.82rem + 0.3vw,  1rem);
+  --t-md:   clamp(1rem,    0.95rem + 0.3vw,  1.125rem);
+  --t-lg:   clamp(1.1rem,  1rem    + 0.5vw,  1.3rem);
+  --t-xl:   clamp(1.4rem,  1.2rem  + 0.8vw,  1.8rem);
+}
+
+/* ── SHELL ── */
+.shell {
+  display: flex; flex-direction: column;
+  height: 100dvh; width: 100%;
+}
+
+/* ── TITLEBAR ── */
+.titlebar {
+  background: var(--bg-deeper); border-bottom: 1px solid var(--border);
+  padding: clamp(8px, 1.2vw, 12px) clamp(14px, 2vw, 24px);
+  display: flex; align-items: center; justify-content: space-between;
+  flex-shrink: 0;
+}
+.tb-left { display: flex; align-items: center; gap: clamp(8px, 1.2vw, 14px); }
+.tb-dots { display: flex; gap: 6px; }
+.tb-dot { width: 10px; height: 10px; border-radius: 50%; }
+.tb-title { font-family: var(--font-mono); font-size: var(--t-sm); color: var(--text-faint); letter-spacing: 0.05em; }
+/* hide title text on very small screens */
+@media (max-width: 480px) { .tb-title { display: none; } }
+.cursor {
+  display: inline-block; width: 7px; height: 12px;
+  background: var(--accent); vertical-align: middle; margin-left: 3px;
+  animation: blink 1.1s step-end infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
+.tb-right { display: flex; align-items: center; gap: 8px; }
+.theme-toggle {
+  background: none; border: 1px solid var(--border); border-radius: 5px;
+  padding: 5px 9px; cursor: pointer; color: var(--text-dim);
+  font-size: var(--t-md); display: flex; align-items: center; gap: 4px;
+  transition: border-color 0.2s, color 0.2s;
+}
+.theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
+.resume-btn {
+  font-family: var(--font-mono); font-size: var(--t-sm);
+  color: var(--accent); border: 1px solid var(--accent-dk);
+  border-radius: 5px; padding: 5px 12px;
+  display: flex; align-items: center; gap: 5px;
+  background: none; text-decoration: none; transition: background 0.2s;
+}
+.resume-btn:hover { background: var(--chip-bg); }
+.resume-btn span { display: none; }
+@media (min-width: 500px) { .resume-btn span { display: inline; } }
+
+/* ── LAYOUT ── */
+.layout {
+  display: grid;
+  grid-template-columns: clamp(200px, 20vw, 280px) 1fr;
+  flex: 1; overflow: hidden;
+}
+
+/* ── SIDEBAR ── */
+.sb {
+  border-right: 1px solid var(--border);
+  display: flex; flex-direction: column;
+  background: var(--bg-deeper); overflow-y: auto;
+}
+.sb-top {
+  padding: clamp(14px,2vw,22px) clamp(12px,1.5vw,18px) 14px;
+  border-bottom: 1px solid var(--border); flex-shrink: 0;
+}
+.sb-name { font-size: var(--t-md); font-weight: 500; color: var(--accent); font-family: var(--font-mono); }
+.sb-role { font-size: var(--t-xs); color: var(--text-faint); margin-top: 4px; font-family: var(--font-mono); }
+.sb-badge {
+  display: inline-flex; align-items: center; gap: 5px; margin-top: 10px;
+  font-size: var(--t-xs); color: var(--accent);
+  background: var(--badge-bg); border: 1px solid var(--accent-dk);
+  border-radius: 4px; padding: 3px 8px; font-family: var(--font-mono);
+}
+.sb-badge-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--accent); }
+
+.sb-nav { padding: 8px 0; flex: 1; }
+.sb-nav-item {
+  display: flex; align-items: center; gap: 9px;
+  padding: clamp(7px,1vw,10px) clamp(12px,1.5vw,18px);
+  font-size: var(--t-sm); color: var(--text-dim);
+  font-family: var(--font-mono); border-left: 2px solid transparent;
+  cursor: pointer; transition: all 0.15s; user-select: none;
+}
+.sb-nav-item:hover { color: var(--text-mid); background: var(--nav-active); }
+.sb-nav-item.active { color: var(--accent); border-left-color: var(--accent); background: var(--nav-active); }
+.sb-nav-item i { font-size: var(--t-md); flex-shrink: 0; }
+/* hide text labels on narrow sidebar */
+@media (max-width: 640px) { .sb-nav-item span { display: none; } }
+
+.sb-bottom {
+  border-top: 1px solid var(--border);
+  padding: clamp(12px,1.5vw,16px) clamp(12px,1.5vw,18px) 18px;
+  display: flex; flex-direction: column; gap: 12px; flex-shrink: 0;
+}
+.sb-block-label {
+  font-size: var(--t-xs); color: var(--text-mid);
+  letter-spacing: 0.14em; text-transform: uppercase;
+  font-family: var(--font-mono); margin-bottom: 8px;
+}
+.sb-contact-item { display: flex; align-items: center; gap: 9px; margin-bottom: 7px; }
+.sb-contact-item:last-child { margin-bottom: 0; }
+.sb-contact-item i { font-size: var(--t-md); color: var(--accent); flex-shrink: 0; }
+.sb-contact-val { font-size: var(--t-sm); color: var(--text-body); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sb-plink {
+  display: flex; align-items: center; gap: 9px; font-size: var(--t-sm);
+  color: var(--text-mid); padding: 7px 10px; border: 1px solid var(--border);
+  border-radius: 6px; margin-bottom: 6px; background: var(--bg);
+  text-decoration: none; transition: border-color 0.15s;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.sb-plink:last-child { margin-bottom: 0; }
+.sb-plink:hover { border-color: var(--accent-dk); }
+.sb-plink i { font-size: var(--t-md); color: var(--accent); flex-shrink: 0; }
+
+/* ── MAIN CONTENT ── */
+.mc { display: flex; flex-direction: column; overflow: hidden; min-width: 0; }
+
+.mc-tabs {
+  background: var(--bg-deeper); border-bottom: 1px solid var(--border);
+  display: flex; overflow-x: auto; flex-shrink: 0; scrollbar-width: none;
+}
+.mc-tabs::-webkit-scrollbar { display: none; }
+.mc-tab {
+  padding: clamp(7px,1vw,10px) clamp(10px,1.5vw,16px);
+  font-size: var(--t-xs); font-family: var(--font-mono);
+  color: var(--text-faint); border-right: 1px solid var(--border);
+  display: flex; align-items: center; gap: 5px;
+  white-space: nowrap; cursor: pointer; transition: color 0.15s;
+  user-select: none; border-bottom: 2px solid transparent; flex-shrink: 0;
+}
+.mc-tab:hover { color: var(--text-mid); }
+.mc-tab.active { color: var(--text-hi); background: var(--bg); border-bottom-color: var(--accent); }
+.mc-tab .tab-close { font-size: var(--t-xs); opacity: 0; margin-left: 4px; transition: opacity 0.15s; }
+.mc-tab:hover .tab-close { opacity: 0.5; }
+.mc-tab.active .tab-close { opacity: 0.4; }
+.mc-tab i { font-size: var(--t-sm); }
+
+.mc-body {
+  padding: clamp(20px, 3vw, 44px) clamp(20px, 3.5vw, 52px);
+  overflow-y: auto; flex: 1; width: 100%;
+}
+
+/* ── SECTION PAGES ── */
+.page { display: none; }
+.page.active { display: block; }
+
+/* ── SECTION HEADINGS ── */
+.sec-head { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; margin-top: 26px; }
+.sec-head:first-child { margin-top: 0; }
+.sec-line { flex: 1; height: 1px; background: var(--border); }
+.sec-label { font-size: var(--t-xs); color: var(--text-mid); letter-spacing: 0.14em; text-transform: uppercase; font-family: var(--font-mono); white-space: nowrap; }
+
+/* ── ABOUT HERO ── */
+.about-h { font-size: var(--t-xl); font-weight: 500; color: var(--text-hi); margin-bottom: 5px; line-height: 1.2; }
+.about-h span { color: var(--accent); }
+.about-role { font-size: var(--t-sm); color: var(--text-faint); margin-bottom: 12px; font-family: var(--font-mono); }
+.about-bio { font-size: var(--t-base); color: var(--text-body); line-height: 1.85; }
+
+/* ── EDU GRID ── */
+.edu-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.edu-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 14px; }
+.edu-deg { font-size: var(--t-md); font-weight: 500; color: var(--text-hi); margin-bottom: 3px; }
+.edu-school { font-size: var(--t-sm); color: var(--accent); font-family: var(--font-mono); margin-bottom: 4px; }
+.edu-detail { font-size: var(--t-sm); color: var(--text-mid); line-height: 1.65; }
+.edu-pill { display: inline-block; font-size: var(--t-xs); padding: 2px 8px; background: var(--chip-bg); border: 1px solid var(--border-hi); border-radius: 4px; color: var(--accent); font-family: var(--font-mono); margin-top: 6px; }
+
+/* ── SKILLS ── */
+.skills-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.skill-group { background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 12px 13px; }
+.skill-cat { font-size: var(--t-xs); color: var(--text-faint); font-family: var(--font-mono); margin-bottom: 8px; }
+.skill-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+.skill-tag { font-size: var(--t-sm); padding: 3px 8px; background: var(--tag-bg); border: 1px solid var(--tag-border); border-radius: 3px; color: var(--tag-text); font-family: var(--font-mono); }
+
+/* ── TIMELINE ── */
+.tl-item { display: grid; grid-template-columns: 2px 1fr; gap: 0 16px; margin-bottom: 24px; }
+.tl-item:last-child { margin-bottom: 0; }
+.tl-bar { background: var(--accent-dk); border-radius: 3px; }
+.tl-title { font-size: var(--t-lg); font-weight: 500; color: var(--text-hi); margin-bottom: 3px; }
+.tl-meta { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 7px; gap: 8px; flex-wrap: wrap; }
+.tl-sub { font-size: var(--t-sm); color: var(--accent); font-family: var(--font-mono); }
+.tl-date { font-size: var(--t-sm); color: var(--text-faint); white-space: nowrap; }
+.tl-desc { font-size: var(--t-base); color: var(--text-body); line-height: 1.85; }
+.tl-chip { display: inline-block; font-size: var(--t-xs); padding: 2px 8px; background: var(--chip-bg); border: 1px solid var(--border-hi); border-radius: 4px; color: var(--accent); font-family: var(--font-mono); margin-top: 6px; }
+
+/* ── RESEARCH CARD ── */
+.research-card { background: var(--bg-card); border: 1px solid var(--border-hi); border-radius: 8px; padding: clamp(14px,2vw,20px); margin-bottom: 12px; }
+.research-card:last-child { margin-bottom: 0; }
+.research-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px; gap: 10px; flex-wrap: wrap; }
+.research-title { font-size: var(--t-md); font-weight: 500; color: var(--text-hi); line-height: 1.45; }
+.research-date { font-size: var(--t-sm); color: var(--text-faint); white-space: nowrap; }
+.research-venue { font-size: var(--t-sm); color: var(--accent); font-family: var(--font-mono); margin-bottom: 8px; }
+.research-desc { font-size: var(--t-base); color: var(--text-body); line-height: 1.85; margin-bottom: 10px; }
+.research-footer { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; }
+.research-chip { font-size: var(--t-xs); padding: 2px 8px; background: var(--chip-bg); border: 1px solid var(--border-hi); border-radius: 4px; color: var(--accent); font-family: var(--font-mono); }
+.research-doi { font-size: var(--t-xs); color: var(--text-dim); font-family: var(--font-mono); word-break: break-all; }
+
+/* ── PROJECT GRID ── */
+.proj-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.proj-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: clamp(13px,2vw,18px); }
+.proj-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
+.proj-title { font-size: var(--t-md); font-weight: 500; color: var(--text-hi); }
+.proj-icons { display: flex; gap: 8px; }
+.proj-icons a { color: var(--text-dim); text-decoration: none; font-size: var(--t-lg); transition: color 0.15s; }
+.proj-icons a:hover { color: var(--accent); }
+.proj-desc { font-size: var(--t-base); color: var(--text-body); line-height: 1.8; margin-bottom: 10px; }
+.proj-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+.proj-tag { font-size: var(--t-xs); padding: 3px 7px; background: var(--tag-bg); border: 1px solid var(--tag-border); border-radius: 3px; color: var(--tag-text); font-family: var(--font-mono); }
+
+/* ── HONOUR ── */
+.honour-item { display: grid; grid-template-columns: 2px 1fr; gap: 0 16px; margin-bottom: 22px; }
+.honour-item:last-child { margin-bottom: 0; }
+.honour-bar { background: var(--accent-dk); border-radius: 3px; }
+.honour-title { font-size: var(--t-md); font-weight: 500; color: var(--text-hi); margin-bottom: 3px; }
+.honour-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; flex-wrap: wrap; gap: 4px; }
+.honour-sub { font-size: var(--t-sm); color: var(--accent); font-family: var(--font-mono); }
+.honour-date { font-size: var(--t-sm); color: var(--text-faint); }
+.honour-desc { font-size: var(--t-base); color: var(--text-body); line-height: 1.8; }
+.honour-chip { display: inline-block; font-size: var(--t-xs); padding: 2px 8px; background: var(--chip-bg); border: 1px solid var(--border-hi); border-radius: 4px; color: var(--accent); font-family: var(--font-mono); margin-top: 6px; }
+
+/* ── RESUME SECTIONS (about.md) ── */
+.rs-sec {
+  border: 1px solid var(--border); border-radius: 8px;
+  padding: clamp(13px,2vw,18px); margin-top: 10px;
+  cursor: pointer; transition: border-color 0.15s, background 0.15s;
+}
+.rs-sec:hover { border-color: var(--accent-dk); background: var(--nav-active); }
+.rs-sec:first-of-type { margin-top: 16px; }
+.rs-sec-head {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid var(--border);
+}
+.rs-sec-label {
+  font-size: var(--t-xs); color: var(--accent);
+  letter-spacing: 0.12em; text-transform: uppercase;
+  font-family: var(--font-mono); display: flex; align-items: center; gap: 7px;
+}
+.rs-sec-label i { font-size: var(--t-sm); }
+.rs-sec-link { font-size: var(--t-xs); color: var(--text-faint); font-family: var(--font-mono); transition: color 0.15s; white-space: nowrap; }
+.rs-sec:hover .rs-sec-link { color: var(--accent); }
+.rs-row { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; flex-wrap: wrap; }
+.rs-row-left { flex: 1; min-width: 0; }
+.rs-row-right { text-align: right; flex-shrink: 0; }
+.rs-title { font-size: var(--t-md); font-weight: 500; color: var(--text-hi); margin-bottom: 2px; }
+.rs-sub { font-size: var(--t-sm); color: var(--text-mid); font-family: var(--font-mono); }
+.rs-date { font-size: var(--t-xs); color: var(--text-faint); font-family: var(--font-mono); margin-bottom: 4px; }
+.rs-tag {
+  display: inline-block; font-size: var(--t-xs); padding: 2px 7px;
+  background: var(--tag-bg); border: 1px solid var(--tag-border);
+  border-radius: 3px; color: var(--tag-text); font-family: var(--font-mono);
+}
+.rs-tag-hi { background: var(--chip-bg); border-color: var(--border-hi); color: var(--accent); }
+.rs-bullets { margin-top: 8px; display: flex; flex-direction: column; gap: 5px; }
+.rs-bullet {
+  font-size: var(--t-base); color: var(--text-body); line-height: 1.75;
+  padding-left: 16px; position: relative;
+}
+.rs-bullet::before { content: '–'; position: absolute; left: 0; color: var(--accent-dk); font-family: var(--font-mono); }
+.rs-skills-row { display: flex; align-items: baseline; gap: 12px; margin-bottom: 6px; flex-wrap: wrap; }
+.rs-skills-row:last-child { margin-bottom: 0; }
+.rs-skill-cat { font-family: var(--font-mono); color: var(--accent); font-size: var(--t-sm); min-width: 80px; flex-shrink: 0; }
+.rs-skill-list { font-size: var(--t-base); color: var(--text-body); }
+.rs-inline-list { display: flex; flex-direction: column; gap: 10px; }
+.rs-inline-item { display: flex; flex-direction: column; gap: 2px; }
+
+/* ── ABOUT: 2-col resume layout on wide screens ── */
+.rs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: start;
+}
+.rs-grid .rs-sec { margin-top: 0; }
+.rs-col { display: flex; flex-direction: column; gap: 10px; }
+
+/* ── AESTHETIC POLISH ── */
+
+/* pulsing status dot */
+.sb-badge-dot {
+  width: 5px; height: 5px; border-radius: 50%; background: var(--accent);
+  box-shadow: 0 0 0 0 var(--accent);
+  animation: pulse 2.4s infinite;
+}
+@keyframes pulse {
+  0%   { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 60%, transparent); }
+  70%  { box-shadow: 0 0 0 5px color-mix(in srgb, var(--accent) 0%, transparent); }
+  100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 0%, transparent); }
+}
+
+/* card lift + soft shadow on hover */
+.rs-sec, .proj-card, .edu-card {
+  transition: border-color 0.18s, background 0.18s, transform 0.18s, box-shadow 0.18s;
+}
+.rs-sec:hover, .proj-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px -8px color-mix(in srgb, var(--accent) 30%, transparent);
+}
+
+/* research card subtle accent glow */
+.research-card {
+  position: relative;
+  box-shadow: 0 4px 24px -12px color-mix(in srgb, var(--accent) 40%, transparent);
+}
+
+/* accent gradient bar on hero name */
+.about-h span {
+  background: linear-gradient(120deg, var(--accent), color-mix(in srgb, var(--accent) 60%, var(--text-hi)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* timeline bar gradient */
+.tl-bar, .honour-bar {
+  background: linear-gradient(180deg, var(--accent), var(--accent-dk));
+}
+
+/* nav item subtle slide on hover */
+.sb-nav-item { transition: all 0.18s ease; }
+.sb-nav-item:hover { padding-left: clamp(15px, 1.8vw, 21px); }
+.sb-nav-item.active:hover { padding-left: clamp(12px,1.5vw,18px); }
+
+/* skill tags hover */
+.skill-tag, .proj-tag, .rs-tag {
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+.skill-tag:hover, .proj-tag:hover {
+  border-color: var(--accent-dk);
+  color: var(--accent);
+}
+
+/* resume button shimmer */
+.resume-btn {
+  position: relative; overflow: hidden;
+}
+.resume-btn::after {
+  content: ''; position: absolute; top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--accent) 18%, transparent), transparent);
+  transition: left 0.5s;
+}
+.resume-btn:hover::after { left: 100%; }
+
+/* tab bar active glow */
+.mc-tab.active { box-shadow: inset 0 -2px 0 var(--accent); }
+
+/* smooth theme cross-fade */
+* { transition-property: background-color, border-color, color, box-shadow; }
+
+/* section divider line gradient */
+.sec-line, .rs-sec-head { 
+  background-image: none;
+}
+.sec-line {
+  background: linear-gradient(90deg, var(--border), transparent);
+}
+
+/* avatar-style monogram in sidebar top */
+.sb-monogram {
+  width: 38px; height: 38px; border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-dk));
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-mono); font-weight: 500; font-size: 15px;
+  color: var(--bg-deeper); margin-bottom: 12px;
+  box-shadow: 0 4px 14px -4px color-mix(in srgb, var(--accent) 50%, transparent);
+}
+
+/* ── MOBILE BREAKPOINTS ── */
+@media (max-width: 900px) {
+  .rs-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .edu-grid, .proj-grid { grid-template-columns: 1fr; }
+  .skills-row { grid-template-columns: 1fr 1fr; }
+  .rs-row { flex-direction: column; }
+  .rs-row-right { text-align: left; }
+  .tl-meta { flex-direction: column; gap: 2px; }
+  .research-top { flex-direction: column; }
+}
+.ov-hint {
+  display: flex; align-items: center; gap: 8px;
+  padding: 9px 13px; background: var(--bg-card);
+  border: 1px solid var(--border); border-radius: 6px; margin-top: 10px;
+}
+.ov-hint i { font-size: var(--t-sm); color: var(--text-dim); }
+.ov-hint span { font-size: var(--t-xs); color: var(--text-faint); font-family: var(--font-mono); }
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-faint); }
+
+/* ── TRANSITIONS ── */
+body, .shell, .sb, .titlebar, .mc-tabs, .mc-body, .sb-top, .sb-nav-item,
+.edu-card, .skill-group, .tl-item, .research-card, .proj-card, .honour-item, .rs-sec {
+  transition: background 0.25s, border-color 0.25s, color 0.25s;
+}
+
+/* ── MOBILE: bottom nav ── */
+@media (max-width: 640px) {
+  .layout { grid-template-columns: 1fr; }
+  .sb {
+    position: fixed; bottom: 0; left: 0; right: 0; top: auto;
+    flex-direction: row; height: 56px; z-index: 100;
+    border-right: none; border-top: 1px solid var(--border); overflow: visible;
+  }
+  .sb-top { display: none; }
+  .sb-nav { display: flex; flex-direction: row; padding: 0; flex: 1; overflow-x: auto; align-items: stretch; }
+  .sb-nav-item { flex: 1; flex-direction: column; justify-content: center; padding: 6px 4px; gap: 3px; border-left: none; border-top: 2px solid transparent; min-width: 44px; }
+  .sb-nav-item.active { border-left: none; border-top-color: var(--accent); }
+  .sb-nav-item .ico svg { width: 20px; height: 20px; }
+  .sb-nav-item span { display: none; }
+  .sb-bottom { display: none; }
+  .mc { height: calc(100dvh - 44px - 56px); }
+  .mc-body { padding: 16px 14px 20px; }
+  .proj-grid, .edu-grid { grid-template-columns: 1fr; }
+  .skills-row { grid-template-columns: 1fr 1fr; }
+}
+
+/* ── TABLET: narrow icon-only sidebar ── */
+@media (min-width: 641px) and (max-width: 900px) {
+  .layout { grid-template-columns: 56px 1fr; }
+  .sb-top { padding: 12px 8px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+  .sb-name, .sb-role, .sb-badge { display: none; }
+  .sb-monogram { margin-bottom: 0; }
+  .sb-nav-item { padding: 10px 0; justify-content: center; gap: 0; }
+  .sb-nav-item:hover { padding-left: 0; }
+  .sb-nav-item .ico svg { width: 20px; height: 20px; }
+  .sb-nav-item span { display: none; }
+  .sb-bottom { display: none; }
+  .rs-grid { grid-template-columns: 1fr; }
+  .proj-grid { grid-template-columns: 1fr; }
+}
+
+</style>
+</head>
+<body>
+
+<div class="shell">
+
+  <!-- TITLEBAR -->
+  <div class="titlebar">
+    <div class="tb-left">
+      <div class="tb-dots">
+        <div class="tb-dot" style="background:#e87070;"></div>
+        <div class="tb-dot" style="background:#e8c050;"></div>
+        <div class="tb-dot" style="background:#60c060;"></div>
+      </div>
+      <div class="tb-title">breeti-bandyopadhyay.dev<span class="cursor"></span></div>
+    </div>
+    <div class="tb-right">
+      <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">
+        <span class="ico"><svg id="theme-icon" width="1em" height="1em" style="stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round"><use href="#ico-sun"/></svg></span>
+      </button>
+      <a href="#" class="resume-btn"><span class="ico"><svg width="1em" height="1em"><use href="#ico-download"/></svg></span>resume.pdf</a>
+    </div>
+  </div>
+
+  <!-- LAYOUT -->
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sb">
+      <div class="sb-top">
+        <div class="sb-monogram">BB</div>
+        <div class="sb-name">Breeti B.</div>
+        <div class="sb-role">$ cse @ snu · 2028</div>
+        <div class="sb-badge"><div class="sb-badge-dot"></div>open to opportunities</div>
+      </div>
+
+      <nav class="sb-nav">
+        <div class="sb-nav-item active" onclick="openTab('about')">
+          <span class="ico"><svg width="1em" height="1em"><use href="#ico-user"/></svg></span><span>about.md</span>
+        </div>
+        <div class="sb-nav-item" onclick="openTab('experience')">
+          <span class="ico"><svg width="1em" height="1em"><use href="#ico-briefcase"/></svg></span><span>experience.json</span>
+        </div>
+        <div class="sb-nav-item" onclick="openTab('research')">
+          <span class="ico"><svg width="1em" height="1em"><use href="#ico-flask"/></svg></span><span>research.md</span>
+        </div>
+        <div class="sb-nav-item" onclick="openTab('projects')">
+          <span class="ico"><svg width="1em" height="1em"><use href="#ico-code"/></svg></span><span>projects.py</span>
+        </div>
+        <div class="sb-nav-item" onclick="openTab('honours')">
+          <span class="ico"><svg width="1em" height="1em"><use href="#ico-trophy"/></svg></span><span>honours+certs.md</span>
+        </div>
+        <div class="sb-nav-item" onclick="openTab('education')">
+          <span class="ico"><svg width="1em" height="1em"><use href="#ico-school"/></svg></span><span>education.md</span>
+        </div>
+        <div class="sb-nav-item" onclick="openTab('skills')">
+          <span class="ico"><svg width="1em" height="1em"><use href="#ico-cpu"/></svg></span><span>skills.json</span>
+        </div>
+        <div class="sb-nav-item" onclick="openTab('organisations')">
+          <span class="ico"><svg width="1em" height="1em"><use href="#ico-user"/></svg></span><span>organisations.md</span>
+        </div>
+      </nav>
+
+      <div class="sb-bottom">
+        <div>
+          <div class="sb-block-label">// contact</div>
+          <div class="sb-contact-item"><span class="ico"><svg width="1em" height="1em"><use href="#ico-mail"/></svg></span><span class="sb-contact-val">bb916@snu.edu.in</span></div>
+          <div class="sb-contact-item"><span class="ico"><svg width="1em" height="1em"><use href="#ico-phone"/></svg></span><span class="sb-contact-val">88904 72117</span></div>
+          <div class="sb-contact-item"><span class="ico"><svg width="1em" height="1em"><use href="#ico-map-pin"/></svg></span><span class="sb-contact-val">Pilani, Rajasthan</span></div>
+        </div>
+        <div>
+          <div class="sb-block-label">// profiles</div>
+          <a href="https://github.com/Silvermysti" target="_blank" class="sb-plink"><span class="ico"><svg width="1em" height="1em"><use href="#ico-github"/></svg></span>github.com/Silvermysti</a>
+          <a href="https://www.linkedin.com/in/breeti-bandyopadhyay-68894b31a/" target="_blank" class="sb-plink"><span class="ico"><svg width="1em" height="1em"><use href="#ico-linkedin"/></svg></span>in/breeti-bandyopadhyay</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="mc">
+
+      <!-- TABS -->
+      <div class="mc-tabs" id="tabs-bar">
+        <!-- tabs injected by JS -->
+      </div>
+
+      <!-- CONTENT -->
+      <div class="mc-body">
+
+        <!-- ABOUT -->
+        <div class="page active" id="page-about">
+
+          <!-- hero -->
+          <div class="about-h">Breeti <span>Bandyopadhyay</span></div>
+          <div class="about-role">$ cse @ shiv nadar university · 2024–2028</div>
+          <div class="about-bio">1st year CSE student (CGPA 9.32, Dean's List) working at the intersection of ML, computer vision, and computational research. Published author in Int. J. Hydrogen Energy (IF 8.3). 8 public repos on GitHub. Open to research and engineering opportunities.</div>
+
+          <div class="rs-grid">
+            <div class="rs-col">
+
+          <!-- EDUCATION -->
+          <div class="rs-sec" onclick="openTab('education')">
+            <div class="rs-sec-head">
+              <span class="rs-sec-label"><span class="ico"><svg width="14" height="14"><use href="#ico-school"/></svg></span>education</span>
+              <span class="rs-sec-link">education.md →</span>
+            </div>
+            <div class="rs-row">
+              <div class="rs-row-left">
+                <div class="rs-title">B.Tech Computer Science &amp; Engineering</div>
+                <div class="rs-sub">Shiv Nadar University, Noida · Minor in Mathematics</div>
+              </div>
+              <div class="rs-row-right">
+                <div class="rs-date">2024 – 2028</div>
+                <div class="rs-tag">CGPA 9.32</div>
+              </div>
+            </div>
+            <div class="rs-bullets">
+              <div class="rs-bullet">Dean's List 2024–25 — ranked top 10% of the CS cohort</div>
+            </div>
+            <div class="rs-row" style="margin-top:10px;">
+              <div class="rs-row-left">
+                <div class="rs-title">Class X &amp; XII · CBSE</div>
+                <div class="rs-sub">Birla Balika Vidyapeeth, Pilani</div>
+              </div>
+              <div class="rs-row-right">
+                <div class="rs-date">2021 – 2024</div>
+                <div class="rs-tag">97% · Rank 2</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- EXPERIENCE -->
+          <div class="rs-sec" onclick="openTab('experience')">
+            <div class="rs-sec-head">
+              <span class="rs-sec-label"><span class="ico"><svg width="1em" height="1em"><use href="#ico-briefcase"/></svg></span>experience</span>
+              <span class="rs-sec-link">experience.json →</span>
+            </div>
+            <div class="rs-row">
+              <div class="rs-row-left">
+                <div class="rs-title">Research Intern</div>
+                <div class="rs-sub">5G Use Case Lab, BITS Pilani</div>
+              </div>
+              <div class="rs-row-right">
+                <div class="rs-date">Jun – Jul 2025</div>
+              </div>
+            </div>
+            <div class="rs-bullets">
+              <div class="rs-bullet">Implemented deep learning models for 5G signal modulation recognition using FFT-based spectral analysis</div>
+              <div class="rs-bullet">Collaborated with EEE faculty on wireless communication research</div>
+            </div>
+          </div>
+
+            </div><!-- /rs-col left -->
+            <div class="rs-col">
+
+          <!-- RESEARCH -->
+          <div class="rs-sec" onclick="openTab('research')">
+            <div class="rs-sec-head">
+              <span class="rs-sec-label"><span class="ico"><svg width="1em" height="1em"><use href="#ico-flask"/></svg></span>research</span>
+              <span class="rs-sec-link">research.md →</span>
+            </div>
+            <div class="rs-row">
+              <div class="rs-row-left">
+                <div class="rs-title">Reversible H₂ Storage in 2D Holey Graphyne — DFT Study</div>
+                <div class="rs-sub">Int. J. Hydrogen Energy · Impact Factor 8.3 · Physics Dept., BITS Pilani</div>
+              </div>
+              <div class="rs-row-right">
+                <div class="rs-date">Dec 2024 – Jan 2025</div>
+                <div class="rs-tag rs-tag-hi">published</div>
+              </div>
+            </div>
+            <div class="rs-bullets">
+              <div class="rs-bullet">Conducted VASP simulations for structure optimisation, DOS and band structure analysis</div>
+              <div class="rs-bullet">Evaluated metrics meeting DOE hydrogen storage targets</div>
+            </div>
+          </div>
+
+          <!-- PROJECTS -->
+          <div class="rs-sec" onclick="openTab('projects')">
+            <div class="rs-sec-head">
+              <span class="rs-sec-label"><span class="ico"><svg width="1em" height="1em"><use href="#ico-code"/></svg></span>projects</span>
+              <span class="rs-sec-link">projects.py →</span>
+            </div>
+            <div class="rs-row">
+              <div class="rs-row-left">
+                <div class="rs-title">Movement Video Comparator</div>
+                <div class="rs-sub">Python · MediaPipe · OpenCV · FFmpeg</div>
+              </div>
+            </div>
+            <div class="rs-bullets">
+              <div class="rs-bullet">Cosine similarity of joint angles for automatic temporal alignment; side-by-side MP4 output with pose overlays</div>
+            </div>
+            <div class="rs-row" style="margin-top:10px;">
+              <div class="rs-row-left">
+                <div class="rs-title">Face Recognition Photo Organizer</div>
+                <div class="rs-sub">Python · face_recognition · OpenCV · NumPy</div>
+              </div>
+            </div>
+            <div class="rs-bullets">
+              <div class="rs-bullet">Quality-based multi-reference matching with automatic merge detection and CodeFormer face enhancement</div>
+            </div>
+            <div class="rs-row" style="margin-top:10px;">
+              <div class="rs-row-left">
+                <div class="rs-title">SMS Spam Filter</div>
+                <div class="rs-sub">Python · Scikit-Learn · NLTK</div>
+              </div>
+            </div>
+            <div class="rs-bullets">
+              <div class="rs-bullet">Logistic Regression on 5,574 messages — 97.97% accuracy, 98.97% precision</div>
+            </div>
+          </div>
+
+          <!-- SKILLS -->
+          <div class="rs-sec" onclick="openTab('skills')">
+            <div class="rs-sec-head">
+              <span class="rs-sec-label"><span class="ico"><svg width="1em" height="1em"><use href="#ico-cpu"/></svg></span>skills</span>
+              <span class="rs-sec-link">skills.json →</span>
+            </div>
+            <div class="rs-skills-row">
+              <span class="rs-skill-cat">Languages</span>
+              <span class="rs-skill-list">Python · Java · C · R</span>
+            </div>
+            <div class="rs-skills-row">
+              <span class="rs-skill-cat">ML / CV</span>
+              <span class="rs-skill-list">TensorFlow · Scikit-Learn · XGBoost · MediaPipe · face_recognition · OpenCV · NLTK</span>
+            </div>
+            <div class="rs-skills-row">
+              <span class="rs-skill-cat">Tools</span>
+              <span class="rs-skill-list">Git · Linux · VS Code · Jupyter · FFmpeg · VASP · VESTA</span>
+            </div>
+          </div>
+
+          <!-- HONOURS + CERTS -->
+          <div class="rs-sec" onclick="openTab('honours')">
+            <div class="rs-sec-head">
+              <span class="rs-sec-label"><span class="ico"><svg width="1em" height="1em"><use href="#ico-trophy"/></svg></span>honours &amp; certifications</span>
+              <span class="rs-sec-link">honours+certs.md →</span>
+            </div>
+            <div class="rs-inline-list">
+              <div class="rs-inline-item">
+                <div class="rs-title">State Topper — KAMP NASTA 2023</div>
+                <div class="rs-sub">Ranked 1st in Rajasthan among 500,000+ participants</div>
+              </div>
+              <div class="rs-inline-item">
+                <div class="rs-title">Dean's List · SNU 2024–25</div>
+                <div class="rs-sub">Top 10% of CS cohort</div>
+              </div>
+              <div class="rs-inline-item">
+                <div class="rs-title">ML Specialization · DeepLearning.AI &amp; Stanford</div>
+                <div class="rs-sub">Advanced Learning Algorithms · Supervised ML: Regression &amp; Classification</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ORGANISATIONS -->
+          <div class="rs-sec" onclick="openTab('organisations')">
+            <div class="rs-sec-head">
+              <span class="rs-sec-label"><span class="ico"><svg width="1em" height="1em"><use href="#ico-user"/></svg></span>organisations</span>
+              <span class="rs-sec-link">organisations.md →</span>
+            </div>
+            <div class="rs-row">
+              <div class="rs-row-left">
+                <div class="rs-title">LinkedIn CoachIn Program</div>
+                <div class="rs-sub">Selected among top 100 women engineering students nationwide for mentorship in DSA, problem-solving, and tech career prep</div>
+              </div>
+              <div class="rs-row-right">
+                <div class="rs-date">2026</div>
+                <div class="rs-tag rs-tag-hi">national</div>
+              </div>
+            </div>
+          </div>
+
+            </div><!-- /rs-col right -->
+          </div><!-- /rs-grid -->
+
+          <div class="ov-hint">
+            <span class="ico"><svg width="1em" height="1em"><use href="#ico-mouse"/></svg></span>
+            <span>click any section to open its full details · or use the sidebar nav</span>
+          </div>
+        </div>
+
+        <!-- EXPERIENCE -->
+        <div class="page" id="page-experience">
+          <div class="tl-item">
+            <div class="tl-bar"></div>
+            <div>
+              <div class="tl-title">Research Intern</div>
+              <div class="tl-meta"><div class="tl-sub">5G Use Case Lab, BITS Pilani</div><div class="tl-date">Jun – Jul 2025</div></div>
+              <div class="tl-desc">Implemented deep learning models for 5G signal modulation recognition using FFT-based spectral analysis. Collaborated with EEE faculty on wireless communication research.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RESEARCH -->
+        <div class="page" id="page-research">
+          <div class="research-card">
+            <div class="research-top">
+              <div class="research-title">Reversible Hydrogen Storage in 2D Holey Graphyne — A DFT Study</div>
+              <div class="research-date">Dec 2024 – Jan 2025</div>
+            </div>
+            <div class="research-venue">Int. J. Hydrogen Energy · IF: 8.3 · Physics Dept., BITS Pilani</div>
+            <div class="research-desc">Co-authored study on reversible hydrogen storage in 2D holey graphyne using Density Functional Theory. Conducted VASP simulations for structure optimisation and electronic analysis including DOS and band structure. Evaluated metrics meeting DOE targets.</div>
+            <div class="research-footer">
+              <span class="research-chip">published</span>
+              <span class="research-chip">DFT · VASP</span>
+              <span class="research-chip">materials science</span>
+              <span class="research-doi">doi.org/10.1016/j.ijhydene.2025.150044</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECTS -->
+        <div class="page" id="page-projects">
+          <div class="proj-grid">
+            <div class="proj-card">
+              <div class="proj-top">
+                <div class="proj-title">Movement Video Comparator</div>
+                <div class="proj-icons"><a href="https://github.com/Silvermysti/movement-video-comparator" target="_blank"><span class="ico"><svg width="1em" height="1em"><use href="#ico-github"/></svg></span></a></div>
+              </div>
+              <div class="proj-desc">Professional-grade tool comparing two movement/exercise videos using pose detection and joint-angle analysis. Automatically aligns videos via cosine similarity of joint angles and produces a synchronized side-by-side MP4 with pose overlays.</div>
+              <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">MediaPipe</span><span class="proj-tag">OpenCV</span><span class="proj-tag">NumPy</span><span class="proj-tag">FFmpeg</span></div>
+            </div>
+            <div class="proj-card">
+              <div class="proj-top">
+                <div class="proj-title">Face Recognition Photo Organizer</div>
+                <div class="proj-icons"><a href="https://github.com/Silvermysti" target="_blank"><span class="ico"><svg width="1em" height="1em"><use href="#ico-github"/></svg></span></a></div>
+              </div>
+              <div class="proj-desc">Automated photo clustering using face detection to group individuals across large image collections. Quality-based multi-reference matching with automatic merge detection; integrates CodeFormer for face enhancement.</div>
+              <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">face_recognition</span><span class="proj-tag">OpenCV</span><span class="proj-tag">NumPy</span></div>
+            </div>
+            <div class="proj-card">
+              <div class="proj-top">
+                <div class="proj-title">SMS Spam Filter</div>
+                <div class="proj-icons"><a href="https://github.com/Silvermysti/Spam_message_filter" target="_blank"><span class="ico"><svg width="1em" height="1em"><use href="#ico-github"/></svg></span></a></div>
+              </div>
+              <div class="proj-desc">Binary SMS spam classifier using Logistic Regression on 5,574 messages. Full NLP pipeline: preprocessing, Bag-of-Words (8,098 features), and evaluation. Achieved 97.97% accuracy, 98.97% precision.</div>
+              <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">Scikit-Learn</span><span class="proj-tag">NLTK</span><span class="proj-tag">Jupyter</span></div>
+            </div>
+            <div class="proj-card">
+              <div class="proj-top">
+                <div class="proj-title">Iris Flower Classification</div>
+                <div class="proj-icons"><a href="https://github.com/Silvermysti/Iris_Flower_Classification" target="_blank"><span class="ico"><svg width="1em" height="1em"><use href="#ico-github"/></svg></span></a></div>
+              </div>
+              <div class="proj-desc">Random Forest classification with XGBoost on the classic Iris dataset. Explores ensemble methods, feature importance, and model comparison as part of ML coursework.</div>
+              <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">XGBoost</span><span class="proj-tag">Scikit-Learn</span><span class="proj-tag">Jupyter</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- HONOURS + CERTS -->
+        <div class="page" id="page-honours">
+          <div class="honour-item">
+            <div class="honour-bar"></div>
+            <div>
+              <div class="honour-title">State Topper — KAMP NASTA 2023</div>
+              <div class="honour-meta"><div class="honour-sub">Rajasthan</div><div class="honour-date">2023</div></div>
+              <div class="honour-desc">Ranked 1st in Rajasthan among 500,000+ participants.</div>
+              <div class="honour-chip">honour · state</div>
+            </div>
+          </div>
+          <div class="honour-item">
+            <div class="honour-bar"></div>
+            <div>
+              <div class="honour-title">Dean's List — Shiv Nadar University</div>
+              <div class="honour-meta"><div class="honour-sub">SNU</div><div class="honour-date">2024–25</div></div>
+              <div class="honour-desc">Ranked in the top 10% of the Computer Science cohort.</div>
+              <div class="honour-chip">honour · academic</div>
+            </div>
+          </div>
+          <div class="honour-item">
+            <div class="honour-bar"></div>
+            <div>
+              <div class="honour-title">Advanced Learning Algorithms</div>
+              <div class="honour-meta"><div class="honour-sub">DeepLearning.AI &amp; Stanford</div><div class="honour-date">cert</div></div>
+              <div class="honour-desc">Part of the Machine Learning Specialization by Andrew Ng.</div>
+              <div class="honour-chip">certification</div>
+            </div>
+          </div>
+          <div class="honour-item">
+            <div class="honour-bar"></div>
+            <div>
+              <div class="honour-title">Supervised Machine Learning</div>
+              <div class="honour-meta"><div class="honour-sub">DeepLearning.AI &amp; Stanford</div><div class="honour-date">cert</div></div>
+              <div class="honour-desc">Regression and Classification — part of the ML Specialization.</div>
+              <div class="honour-chip">certification</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- EDUCATION -->
+        <div class="page" id="page-education">
+          <div class="tl-item">
+            <div class="tl-bar"></div>
+            <div>
+              <div class="tl-title">B.Tech Computer Science &amp; Engineering</div>
+              <div class="tl-meta"><div class="tl-sub">Shiv Nadar University, Noida</div><div class="tl-date">2024 – 2028</div></div>
+              <div class="tl-desc">CGPA: 9.32 · Minor in Mathematics · Dean's List 2024–25 — ranked top 10% of the CS cohort.</div>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-bar"></div>
+            <div>
+              <div class="tl-title">Class X &amp; XII · CBSE</div>
+              <div class="tl-meta"><div class="tl-sub">Birla Balika Vidyapeeth, Pilani</div><div class="tl-date">2021 – 2024</div></div>
+              <div class="tl-desc">Class X: 97.4% · Class XII: 97% · School Rank 2.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SKILLS -->
+        <div class="page" id="page-skills">
+          <div class="sec-head" style="margin-top:0;"><div class="sec-label">// languages</div><div class="sec-line"></div></div>
+          <div class="skill-tags" style="gap:8px; margin-bottom:20px;">
+            <span class="skill-tag">Python</span><span class="skill-tag">Java</span><span class="skill-tag">C</span><span class="skill-tag">R</span>
+          </div>
+          <div class="sec-head"><div class="sec-label">// ml &amp; computer vision</div><div class="sec-line"></div></div>
+          <div class="skill-tags" style="gap:8px; margin-bottom:20px;">
+            <span class="skill-tag">TensorFlow</span><span class="skill-tag">Scikit-Learn</span><span class="skill-tag">XGBoost</span><span class="skill-tag">MediaPipe</span><span class="skill-tag">face_recognition</span><span class="skill-tag">OpenCV</span><span class="skill-tag">NumPy</span><span class="skill-tag">NLTK</span>
+          </div>
+          <div class="sec-head"><div class="sec-label">// tools &amp; software</div><div class="sec-line"></div></div>
+          <div class="skill-tags" style="gap:8px; margin-bottom:20px;">
+            <span class="skill-tag">Git</span><span class="skill-tag">Linux</span><span class="skill-tag">VS Code</span><span class="skill-tag">Jupyter</span><span class="skill-tag">FFmpeg</span><span class="skill-tag">VASP</span><span class="skill-tag">VESTA</span>
+          </div>
+          <div class="sec-head"><div class="sec-label">// computational research</div><div class="sec-line"></div></div>
+          <div class="skill-tags" style="gap:8px; margin-bottom:20px;">
+            <span class="skill-tag">DFT</span><span class="skill-tag">VASP simulations</span><span class="skill-tag">DOS analysis</span><span class="skill-tag">Band structure</span><span class="skill-tag">FFT analysis</span>
+          </div>
+        </div>
+
+        <!-- ORGANISATIONS -->
+        <div class="page" id="page-organisations">
+          <div class="tl-item">
+            <div class="tl-bar"></div>
+            <div>
+              <div class="tl-title">LinkedIn CoachIn Program</div>
+              <div class="tl-meta"><div class="tl-sub">LinkedIn</div><div class="tl-date">2026</div></div>
+              <div class="tl-desc">Selected among top 100 women engineering students nationwide for intensive mentorship in DSA, problem-solving, and tech career preparation.</div>
+              <div class="tl-chip">competitive · national</div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /mc-body -->
+    </main>
+
+  </div><!-- /layout -->
+</div><!-- /shell -->
+
+<script>
+  // ── ICON MAP for tabs ──
+  const ICONS = {
+    'ico-user':       '<svg width="13" height="13"><use href="#ico-user"/></svg>',
+    'ico-briefcase':  '<svg width="13" height="13"><use href="#ico-briefcase"/></svg>',
+    'ico-flask':      '<svg width="13" height="13"><use href="#ico-flask"/></svg>',
+    'ico-code':       '<svg width="13" height="13"><use href="#ico-code"/></svg>',
+    'ico-trophy':     '<svg width="13" height="13"><use href="#ico-trophy"/></svg>',
+    'ico-school':     '<svg width="13" height="13"><use href="#ico-school"/></svg>',
+    'ico-cpu':        '<svg width="13" height="13"><use href="#ico-cpu"/></svg>',
+    'ico-users':      '<svg width="13" height="13"><use href="#ico-users"/></svg>',
+  };
+  const TABS = {
+    about:         { icon: 'ico-user',       label: 'about.md'          },
+    experience:    { icon: 'ico-briefcase',  label: 'experience.json'   },
+    research:      { icon: 'ico-flask',      label: 'research.md'       },
+    projects:      { icon: 'ico-code',       label: 'projects.py'       },
+    honours:       { icon: 'ico-trophy',     label: 'honours+certs.md'  },
+    education:     { icon: 'ico-school',     label: 'education.md'      },
+    skills:        { icon: 'ico-cpu',        label: 'skills.json'       },
+    organisations: { icon: 'ico-users',      label: 'organisations.md'  },
+  };
+
+  // open tabs state — only about is open initially
+  let openTabs = ['about'];
+  let activeTab = 'about';
+
+  function renderTabs() {
+    const bar = document.getElementById('tabs-bar');
+    bar.innerHTML = '';
+    openTabs.forEach(id => {
+      const t = TABS[id];
+      const el = document.createElement('div');
+      el.className = 'mc-tab' + (id === activeTab ? ' active' : '');
+      el.innerHTML = `<span class="ico"><svg width="13" height="13" style="stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round"><use href="#${t.icon}"/></svg></span>${t.label}<span class="tab-close" onclick="closeTab(event,'${id}')">✕</span>`;
+      el.addEventListener('click', (e) => {
+        if (!e.target.classList.contains('tab-close')) switchTab(id);
+      });
+      bar.appendChild(el);
+    });
+  }
+
+  function openTab(id) {
+    if (!openTabs.includes(id)) openTabs.push(id);
+    switchTab(id);
+  }
+
+  function switchTab(id) {
+    activeTab = id;
+    // update nav
+    document.querySelectorAll('.sb-nav-item').forEach((el, i) => {
+      const keys = Object.keys(TABS);
+      el.classList.toggle('active', keys[i] === id);
+    });
+    // update pages
+    document.querySelectorAll('.page').forEach(p => {
+      p.classList.toggle('active', p.id === 'page-' + id);
+    });
+    renderTabs();
+  }
+
+  function closeTab(e, id) {
+    e.stopPropagation();
+    openTabs = openTabs.filter(t => t !== id);
+    // always keep at least one tab
+    if (openTabs.length === 0) openTabs = ['about'];
+    if (activeTab === id) switchTab(openTabs[openTabs.length - 1]);
+    else renderTabs();
+  }
+
+  // ── THEME TOGGLE ──
+  function toggleTheme() {
+    const html = document.documentElement;
+    const isDark = html.getAttribute('data-theme') === 'dark';
+    html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+    const icon = document.getElementById('theme-icon');
+    icon.innerHTML = isDark
+      ? '<use href="#ico-moon"/>'
+      : '<use href="#ico-sun"/>';
+  }
+
+  // init
+  renderTabs();
+</script>
+</body>
+</html>

@@ -35,7 +35,7 @@ one-click toggle between a dark *Slate & Blush* theme and a light *Warm Paper* t
 | 🎨 **Two themes** | Dark `Slate & Blush` · Light `Warm Paper`, toggled instantly |
 | 📄 **Resume overview** | `about.md` summarises every section; click to open the full tab |
 | 📱 **Fully responsive** | Fluid `clamp()` type · tablet icon rail · mobile bottom-nav |
-| 🪶 **Zero dependencies** | Inline SVG icons, one `.html` file, no build step |
+| 🪶 **Zero dependencies** | Inline SVG icons, three clean files (`index.html`, `style.css`, `script.js`), no build step |
 
 ---
 
@@ -52,9 +52,9 @@ skills    honours       education   organisations
 
 ```json
 {
-  "markup":  "HTML",
-  "styles":  "CSS custom properties + clamp() fluid type",
-  "logic":   "vanilla JavaScript",
+  "markup":  "HTML — index.html",
+  "styles":  "CSS — style.css (498 lines, custom properties + clamp())",
+  "logic":   "JS  — script.js (tab routing + theme toggle)",
   "icons":   "inline SVG sprite",
   "fonts":   ["DM Sans", "DM Mono"]
 }

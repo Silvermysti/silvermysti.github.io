@@ -67,14 +67,14 @@ skills    honours       education   organisations
 ```bash
 git clone https://github.com/Silvermysti/silvermysti.github.io.git
 cd silvermysti.github.io
-open index.html        # no build step — just open it
+open index.html        # no build step, just open it
 ```
 
 ---
 
 ### `// deploy`
 
-Hosted on **GitHub Pages** — push to `main` on a `<username>.github.io` repo and it
+Hosted on **GitHub Pages**, push to `main` on a `<username>.github.io` repo and it
 goes live automatically. Works equally well on Netlify, Vercel, or any static host.
 
 ---

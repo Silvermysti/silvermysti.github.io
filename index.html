@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
-<!-- Hidden SVG sprite — all icons inline, no CDN needed -->
+<!-- Hidden SVG sprite: all icons inline, no CDN needed -->
 <svg style="display:none" xmlns="http://www.w3.org/2000/svg">
   <symbol id="ico-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></symbol>
   <symbol id="ico-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><line x1="12" y1="12" x2="12" y2="12.01"/><path d="M2 13a20 20 0 0 0 20 0"/></symbol>
@@ -46,9 +46,9 @@
     </div>
     <div class="tb-right">
       <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">
-        <span class="ico"><svg id="theme-icon" width="1em" height="1em" style="stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round"><use href="#ico-sun"/></svg></span>
+        <span class="ico"><svg id="theme-icon" width="1em" height="1em" style="stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round"><use href="#ico-moon"/></svg></span>
       </button>
-      <a href="#" class="resume-btn"><span class="ico"><svg width="1em" height="1em"><use href="#ico-download"/></svg></span>resume.pdf</a>
+      <a href="resume.pdf" download class="resume-btn"><span class="ico"><svg width="1em" height="1em"><use href="#ico-download"/></svg></span>resume.pdf</a>
     </div>
   </div>
 
@@ -121,9 +121,14 @@
         <div class="page active" id="page-about">
 
           <!-- hero -->
+          <div class="about-greet">$ whoami · hi, I'm 👋</div>
           <div class="about-h">Breeti <span>Bandyopadhyay</span></div>
           <div class="about-role">$ cse @ shiv nadar university · 2024–2028</div>
-          <div class="about-bio">1st year CSE student (CGPA 9.32, Dean's List) working at the intersection of ML, computer vision, and computational research. Published author in Int. J. Hydrogen Energy (IF 8.3). 8 public repos on GitHub. Open to research and engineering opportunities.</div>
+          <div class="about-bio">
+            <p>I'm a 2nd-year CS student (CGPA 9.25, Dean's List) who likes building things that actually run: <strong>LLM agent systems</strong>, machine-learning models, and the occasional computer-vision experiment.</p>
+            <p>Right now I'm a full-stack dev intern at <strong>Tech Mahindra</strong>, building multi-agent LLM pipelines. Before that I co-authored <strong>two computational-materials papers</strong> (Int. J. Hydrogen Energy, IF 8.3, and Surfaces &amp; Interfaces) and trained deep-learning models at a 5G research lab.</p>
+            <p>Off the clock I ship side projects: <strong>17 public repos</strong> and counting. Always up for research and engineering opportunities.</p>
+          </div>
 
           <div class="rs-grid">
             <div class="rs-col">
@@ -141,11 +146,11 @@
               </div>
               <div class="rs-row-right">
                 <div class="rs-date">2024 – 2028</div>
-                <div class="rs-tag">CGPA 9.32</div>
+                <div class="rs-tag">CGPA 9.25</div>
               </div>
             </div>
             <div class="rs-bullets">
-              <div class="rs-bullet">Dean's List 2024–25 — ranked top 10% of the CS cohort</div>
+              <div class="rs-bullet">Dean's List 2024–25, ranked top 10% of the CS cohort</div>
             </div>
             <div class="rs-row" style="margin-top:10px;">
               <div class="rs-row-left">
@@ -167,6 +172,20 @@
             </div>
             <div class="rs-row">
               <div class="rs-row-left">
+                <div class="rs-title">Full-Stack Dev Intern</div>
+                <div class="rs-sub">Tech Mahindra, NSEZ Noida</div>
+              </div>
+              <div class="rs-row-right">
+                <div class="rs-date">May – Jul 2026</div>
+                <div class="rs-tag rs-tag-hi">current</div>
+              </div>
+            </div>
+            <div class="rs-bullets">
+              <div class="rs-bullet">Engineered a multi-agent LLM system for automotive warranty claims: structured-output decisioning across intake, coverage, fraud &amp; recommendation agents on a LangGraph pipeline with human-in-the-loop approval</div>
+              <div class="rs-bullet">Built a bounded conversational intake agent with conditional vision-evidence requests across fast/standard model tiers (Groq / DeepSeek)</div>
+            </div>
+            <div class="rs-row" style="margin-top:10px;">
+              <div class="rs-row-left">
                 <div class="rs-title">Research Intern</div>
                 <div class="rs-sub">5G Use Case Lab, BITS Pilani</div>
               </div>
@@ -175,8 +194,8 @@
               </div>
             </div>
             <div class="rs-bullets">
-              <div class="rs-bullet">Implemented deep learning models for 5G signal modulation recognition using FFT-based spectral analysis</div>
-              <div class="rs-bullet">Collaborated with EEE faculty on wireless communication research</div>
+              <div class="rs-bullet">Built CNN models for radio-signal modulation classification on the DeepSig RadioML 2018.01A dataset using FFT-based spectral features</div>
+              <div class="rs-bullet">Collaborated with EEE faculty on deep learning for wireless communication research</div>
             </div>
           </div>
 
@@ -191,17 +210,29 @@
             </div>
             <div class="rs-row">
               <div class="rs-row-left">
-                <div class="rs-title">Reversible H₂ Storage in 2D Holey Graphyne — DFT Study</div>
-                <div class="rs-sub">Int. J. Hydrogen Energy · Impact Factor 8.3 · Physics Dept., BITS Pilani</div>
+                <div class="rs-title">Reversible H₂ Storage in 2D Holey Graphyne: A DFT Study</div>
+                <div class="rs-sub">Int. J. Hydrogen Energy · IF 8.3 · 10 citations</div>
               </div>
               <div class="rs-row-right">
-                <div class="rs-date">Dec 2024 – Jan 2025</div>
+                <div class="rs-date">2025</div>
                 <div class="rs-tag rs-tag-hi">published</div>
               </div>
             </div>
             <div class="rs-bullets">
-              <div class="rs-bullet">Conducted VASP simulations for structure optimisation, DOS and band structure analysis</div>
-              <div class="rs-bullet">Evaluated metrics meeting DOE hydrogen storage targets</div>
+              <div class="rs-bullet">DFT / VASP study of hydrogen storage on transition-metal-decorated holey graphyne against DOE targets</div>
+            </div>
+            <div class="rs-row" style="margin-top:10px;">
+              <div class="rs-row-left">
+                <div class="rs-title">hBNX Monolayer as Toxic Gas Sensors: A DFT Investigation</div>
+                <div class="rs-sub">Surfaces and Interfaces · 2 co-authors</div>
+              </div>
+              <div class="rs-row-right">
+                <div class="rs-date">2026</div>
+                <div class="rs-tag rs-tag-hi">published</div>
+              </div>
+            </div>
+            <div class="rs-bullets">
+              <div class="rs-bullet">DFT study of transition-metal-functionalized hBNX monolayers for toxic-gas sensing</div>
             </div>
           </div>
 
@@ -213,12 +244,30 @@
             </div>
             <div class="rs-row">
               <div class="rs-row-left">
-                <div class="rs-title">Movement Video Comparator</div>
-                <div class="rs-sub">Python · MediaPipe · OpenCV · FFmpeg</div>
+                <div class="rs-title">Hephaestus: Code Performance Optimiser</div>
+                <div class="rs-sub">Go · Python · Linux perf · SvelteKit · Docker</div>
               </div>
             </div>
             <div class="rs-bullets">
-              <div class="rs-bullet">Cosine similarity of joint angles for automatic temporal alignment; side-by-side MP4 output with pose overlays</div>
+              <div class="rs-bullet">Feeds perf hardware counters to an LLM and applies one optimisation at a time until code runs within 5% of theoretical CPU peak, auto-rolling back ineffective changes</div>
+            </div>
+            <div class="rs-row" style="margin-top:10px;">
+              <div class="rs-row-left">
+                <div class="rs-title">Warranty Decision Engine</div>
+                <div class="rs-sub">Python · LangGraph · FastAPI · Next.js</div>
+              </div>
+            </div>
+            <div class="rs-bullets">
+              <div class="rs-bullet">Multi-agent pipeline that reads a claim, checks coverage, estimates cost &amp; screens for fraud, auto-clearing routine claims and escalating the rest with reasoning</div>
+            </div>
+            <div class="rs-row" style="margin-top:10px;">
+              <div class="rs-row-left">
+                <div class="rs-title">Sidestep</div>
+                <div class="rs-sub">Svelte · WXT · Browser Extension</div>
+              </div>
+            </div>
+            <div class="rs-bullets">
+              <div class="rs-bullet">A gentle focus tool that redirects distracting sites toward your own goals</div>
             </div>
             <div class="rs-row" style="margin-top:10px;">
               <div class="rs-row-left">
@@ -228,15 +277,6 @@
             </div>
             <div class="rs-bullets">
               <div class="rs-bullet">Quality-based multi-reference matching with automatic merge detection and CodeFormer face enhancement</div>
-            </div>
-            <div class="rs-row" style="margin-top:10px;">
-              <div class="rs-row-left">
-                <div class="rs-title">SMS Spam Filter</div>
-                <div class="rs-sub">Python · Scikit-Learn · NLTK</div>
-              </div>
-            </div>
-            <div class="rs-bullets">
-              <div class="rs-bullet">Logistic Regression on 5,574 messages — 97.97% accuracy, 98.97% precision</div>
             </div>
           </div>
 
@@ -251,8 +291,16 @@
               <span class="rs-skill-list">Python · Java · C · R</span>
             </div>
             <div class="rs-skills-row">
+              <span class="rs-skill-cat">AI / LLM</span>
+              <span class="rs-skill-list">LangGraph · FastAPI · SQLAlchemy · Pydantic · LLM agent workflows · Groq · DeepSeek</span>
+            </div>
+            <div class="rs-skills-row">
               <span class="rs-skill-cat">ML / CV</span>
               <span class="rs-skill-list">TensorFlow · Scikit-Learn · XGBoost · MediaPipe · face_recognition · OpenCV · NLTK</span>
+            </div>
+            <div class="rs-skills-row">
+              <span class="rs-skill-cat">Web</span>
+              <span class="rs-skill-list">Next.js · React · Svelte · TypeScript</span>
             </div>
             <div class="rs-skills-row">
               <span class="rs-skill-cat">Tools</span>
@@ -268,7 +316,7 @@
             </div>
             <div class="rs-inline-list">
               <div class="rs-inline-item">
-                <div class="rs-title">State Topper — KAMP NASTA 2023</div>
+                <div class="rs-title">State Topper: KAMP NASTA 2023</div>
                 <div class="rs-sub">Ranked 1st in Rajasthan among 500,000+ participants</div>
               </div>
               <div class="rs-inline-item">
@@ -314,27 +362,60 @@
           <div class="tl-item">
             <div class="tl-bar"></div>
             <div>
+              <div class="tl-title">Full-Stack Dev Intern</div>
+              <div class="tl-meta"><div class="tl-sub">Tech Mahindra, NSEZ Noida</div><div class="tl-date">May – Jul 2026</div></div>
+              <div class="tl-desc">Engineered a multi-agent LLM system for automotive warranty claims: structured-output (Pydantic function-calling) decisioning across intake, coverage, fraud, and recommendation agents on a LangGraph pipeline with human-in-the-loop approval. Built a bounded conversational intake agent with conditional vision-evidence requests, tuning prompts and decision logic across fast/standard model tiers (Groq / DeepSeek).</div>
+              <div class="tl-chip">current · LLM agents</div>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-bar"></div>
+            <div>
               <div class="tl-title">Research Intern</div>
               <div class="tl-meta"><div class="tl-sub">5G Use Case Lab, BITS Pilani</div><div class="tl-date">Jun – Jul 2025</div></div>
-              <div class="tl-desc">Implemented deep learning models for 5G signal modulation recognition using FFT-based spectral analysis. Collaborated with EEE faculty on wireless communication research.</div>
+              <div class="tl-desc">Built CNN models for radio-signal modulation classification on the DeepSig RadioML 2018.01A dataset, using FFT-based spectral features as model input. Collaborated with EEE faculty on deep learning for wireless communication research.</div>
             </div>
           </div>
         </div>
 
         <!-- RESEARCH -->
         <div class="page" id="page-research">
+          <div class="research-meta">
+            <span class="research-chip">2 publications</span>
+            <span class="research-chip">11 citations</span>
+            <span class="research-chip">h-index 1</span>
+            <a href="https://scholar.google.com/citations?user=y_5PYu8AAAAJ&hl=en" target="_blank" class="research-scholar">Google Scholar →</a>
+          </div>
+
           <div class="research-card">
             <div class="research-top">
-              <div class="research-title">Reversible Hydrogen Storage in 2D Holey Graphyne — A DFT Study</div>
-              <div class="research-date">Dec 2024 – Jan 2025</div>
+              <div class="research-title">Unveiling reversible hydrogen storage mechanism on transition metal decorated 2D holey graphyne: A density functional study</div>
+              <div class="research-date">2025</div>
             </div>
-            <div class="research-venue">Int. J. Hydrogen Energy · IF: 8.3 · Physics Dept., BITS Pilani</div>
-            <div class="research-desc">Co-authored study on reversible hydrogen storage in 2D holey graphyne using Density Functional Theory. Conducted VASP simulations for structure optimisation and electronic analysis including DOS and band structure. Evaluated metrics meeting DOE targets.</div>
+            <div class="research-venue">Int. J. Hydrogen Energy · Vol. 148, 150044 · IF: 8.3</div>
+            <div class="research-authors">C. P. Bhat, <b>B. Bandyopadhyay</b>, D. Bandyopadhyay · Physics Dept., BITS Pilani</div>
+            <div class="research-desc">Density Functional Theory study of reversible hydrogen storage on transition-metal-decorated 2D holey graphyne. Ran VASP simulations for structure optimisation and electronic analysis (DOS, band structure), evaluating storage metrics against DOE targets.</div>
             <div class="research-footer">
               <span class="research-chip">published</span>
+              <span class="research-chip">10 citations</span>
               <span class="research-chip">DFT · VASP</span>
-              <span class="research-chip">materials science</span>
-              <span class="research-doi">doi.org/10.1016/j.ijhydene.2025.150044</span>
+              <a href="https://doi.org/10.1016/j.ijhydene.2025.150044" target="_blank" class="research-doi">doi.org/10.1016/j.ijhydene.2025.150044</a>
+            </div>
+          </div>
+
+          <div class="research-card">
+            <div class="research-top">
+              <div class="research-title">Transition metal functionalized novel hBNX monolayer as toxic gas sensors: A density functional investigation</div>
+              <div class="research-date">2026</div>
+            </div>
+            <div class="research-venue">Surfaces and Interfaces · 108764</div>
+            <div class="research-authors">C. P. Bhat, <b>B. Bandyopadhyay</b>, B. Chakraborty, D. Bandyopadhyay</div>
+            <div class="research-desc">Density Functional investigation of transition-metal-functionalized hBNX monolayers as sensors for toxic gases, analysing adsorption behaviour and electronic response to assess their sensing potential.</div>
+            <div class="research-footer">
+              <span class="research-chip">published</span>
+              <span class="research-chip">1 citation</span>
+              <span class="research-chip">DFT · gas sensing</span>
+              <a href="https://doi.org/10.1016/j.surfin.2026.108764" target="_blank" class="research-doi">doi.org/10.1016/j.surfin.2026.108764</a>
             </div>
           </div>
         </div>
@@ -344,35 +425,56 @@
           <div class="proj-grid">
             <div class="proj-card">
               <div class="proj-top">
-                <div class="proj-title">Movement Video Comparator</div>
-                <div class="proj-icons"><a href="https://github.com/Silvermysti/movement-video-comparator" target="_blank"><span class="ico"><svg width="1em" height="1em"><use href="#ico-github"/></svg></span></a></div>
+                <div class="proj-title-row">
+                  <div class="proj-title">Hephaestus: Iterative Code Performance Optimiser</div>
+                  <span class="proj-badge">team</span>
+                </div>
               </div>
-              <div class="proj-desc">Professional-grade tool comparing two movement/exercise videos using pose detection and joint-angle analysis. Automatically aligns videos via cosine similarity of joint angles and produces a synchronized side-by-side MP4 with pose overlays.</div>
-              <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">MediaPipe</span><span class="proj-tag">OpenCV</span><span class="proj-tag">NumPy</span><span class="proj-tag">FFmpeg</span></div>
+              <div class="proj-desc">Profiles binaries with Linux perf, feeds hardware counters (IPC, cache misses, branch mispredictions) to an LLM, and applies one optimisation at a time in a loop until the code runs within 5% of theoretical CPU peak. Weighted scoring (70% runtime · 20% IPC · 10% cache-miss rate) auto-rolls back ineffective changes; runs across x86_64, arm64, wasm32 and riscv64 via Docker.</div>
+              <div class="proj-tags"><span class="proj-tag">Go</span><span class="proj-tag">Python</span><span class="proj-tag">Linux perf</span><span class="proj-tag">SvelteKit</span><span class="proj-tag">Supabase</span><span class="proj-tag">Docker</span></div>
+            </div>
+            <div class="proj-card">
+              <div class="proj-top">
+                <div class="proj-title">Warranty Decision Engine</div>
+                <div class="proj-icons"><a href="https://github.com/Silvermysti/warranty-decision-engine" target="_blank"><span class="ico"><svg width="1em" height="1em"><use href="#ico-github"/></svg></span></a></div>
+              </div>
+              <div class="proj-desc">Multi-agent LangGraph pipeline that automates automotive warranty claims: reads the complaint, checks coverage, estimates repair cost and screens for fraud. Coverage and cost are computed in plain code against a parts-and-policy database while the model classifies and explains, so routine claims clear automatically and risky ones escalate to a manager with reasoning.</div>
+              <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">LangGraph</span><span class="proj-tag">FastAPI</span><span class="proj-tag">SQLAlchemy</span><span class="proj-tag">Next.js</span></div>
+            </div>
+            <div class="proj-card">
+              <div class="proj-top">
+                <div class="proj-title-row">
+                  <div class="proj-title">ReferIn</div>
+                  <span class="proj-badge">team</span>
+                </div>
+                <div class="proj-icons"><a href="https://github.com/aishwarya-mol-2046/referai" target="_blank"><span class="ico"><svg width="1em" height="1em"><use href="#ico-github"/></svg></span></a></div>
+              </div>
+              <div class="proj-desc">A hiring network built on warm intros. Paste any job description and it extracts the role via DeepSeek, ranks potential internal referrers by TF-IDF fit against your profile, and sources them live from GitHub org members (supplemented by AI suggestions). Drafts a personalised outreach message per referrer, tracks who you've already contacted, and turns your resume into a profile automatically.</div>
+              <div class="proj-tags"><span class="proj-tag">React</span><span class="proj-tag">Flask</span><span class="proj-tag">DeepSeek</span><span class="proj-tag">GitHub API</span><span class="proj-tag">TF-IDF</span></div>
+            </div>
+            <div class="proj-card">
+              <div class="proj-top">
+                <div class="proj-title">Sidestep</div>
+                <div class="proj-icons"><a href="https://github.com/Silvermysti/sidestep" target="_blank"><span class="ico"><svg width="1em" height="1em"><use href="#ico-github"/></svg></span></a></div>
+              </div>
+              <div class="proj-desc">A gentle focus browser extension that intercepts distracting sites and redirects you toward your own stated goals, nudging rather than hard-blocking. Built with the WXT extension framework and a Svelte UI.</div>
+              <div class="proj-tags"><span class="proj-tag">Svelte</span><span class="proj-tag">WXT</span><span class="proj-tag">Browser Extension</span></div>
+            </div>
+            <div class="proj-card">
+              <div class="proj-top">
+                <div class="proj-title">Ori</div>
+                <div class="proj-icons"><a href="https://github.com/Silvermysti/Ori" target="_blank"><span class="ico"><svg width="1em" height="1em"><use href="#ico-github"/></svg></span></a></div>
+              </div>
+              <div class="proj-desc">A pixel-art task scheduler app built on one idea: urgency = temperature. Every task carries a "heat" from 0–4 (CHILL → NOW!) that maps to a warm-earthy colour, so your day reads at a glance. A React + Vite prototype now being packaged into an installable Android app with Capacitor.</div>
+              <div class="proj-tags"><span class="proj-tag">React</span><span class="proj-tag">Vite</span><span class="proj-tag">Capacitor</span><span class="proj-tag">Android</span></div>
             </div>
             <div class="proj-card">
               <div class="proj-top">
                 <div class="proj-title">Face Recognition Photo Organizer</div>
-                <div class="proj-icons"><a href="https://github.com/Silvermysti" target="_blank"><span class="ico"><svg width="1em" height="1em"><use href="#ico-github"/></svg></span></a></div>
+                <div class="proj-icons"><a href="https://github.com/Silvermysti/Face-Clusturer" target="_blank"><span class="ico"><svg width="1em" height="1em"><use href="#ico-github"/></svg></span></a></div>
               </div>
               <div class="proj-desc">Automated photo clustering using face detection to group individuals across large image collections. Quality-based multi-reference matching with automatic merge detection; integrates CodeFormer for face enhancement.</div>
               <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">face_recognition</span><span class="proj-tag">OpenCV</span><span class="proj-tag">NumPy</span></div>
-            </div>
-            <div class="proj-card">
-              <div class="proj-top">
-                <div class="proj-title">SMS Spam Filter</div>
-                <div class="proj-icons"><a href="https://github.com/Silvermysti/Spam_message_filter" target="_blank"><span class="ico"><svg width="1em" height="1em"><use href="#ico-github"/></svg></span></a></div>
-              </div>
-              <div class="proj-desc">Binary SMS spam classifier using Logistic Regression on 5,574 messages. Full NLP pipeline: preprocessing, Bag-of-Words (8,098 features), and evaluation. Achieved 97.97% accuracy, 98.97% precision.</div>
-              <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">Scikit-Learn</span><span class="proj-tag">NLTK</span><span class="proj-tag">Jupyter</span></div>
-            </div>
-            <div class="proj-card">
-              <div class="proj-top">
-                <div class="proj-title">Iris Flower Classification</div>
-                <div class="proj-icons"><a href="https://github.com/Silvermysti/Iris_Flower_Classification" target="_blank"><span class="ico"><svg width="1em" height="1em"><use href="#ico-github"/></svg></span></a></div>
-              </div>
-              <div class="proj-desc">Random Forest classification with XGBoost on the classic Iris dataset. Explores ensemble methods, feature importance, and model comparison as part of ML coursework.</div>
-              <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">XGBoost</span><span class="proj-tag">Scikit-Learn</span><span class="proj-tag">Jupyter</span></div>
             </div>
           </div>
         </div>
@@ -382,7 +484,7 @@
           <div class="honour-item">
             <div class="honour-bar"></div>
             <div>
-              <div class="honour-title">State Topper — KAMP NASTA 2023</div>
+              <div class="honour-title">State Topper: KAMP NASTA 2023</div>
               <div class="honour-meta"><div class="honour-sub">Rajasthan</div><div class="honour-date">2023</div></div>
               <div class="honour-desc">Ranked 1st in Rajasthan among 500,000+ participants.</div>
               <div class="honour-chip">honour · state</div>
@@ -391,7 +493,7 @@
           <div class="honour-item">
             <div class="honour-bar"></div>
             <div>
-              <div class="honour-title">Dean's List — Shiv Nadar University</div>
+              <div class="honour-title">Dean's List, Shiv Nadar University</div>
               <div class="honour-meta"><div class="honour-sub">SNU</div><div class="honour-date">2024–25</div></div>
               <div class="honour-desc">Ranked in the top 10% of the Computer Science cohort.</div>
               <div class="honour-chip">honour · academic</div>
@@ -411,7 +513,7 @@
             <div>
               <div class="honour-title">Supervised Machine Learning</div>
               <div class="honour-meta"><div class="honour-sub">DeepLearning.AI &amp; Stanford</div><div class="honour-date">cert</div></div>
-              <div class="honour-desc">Regression and Classification — part of the ML Specialization.</div>
+              <div class="honour-desc">Regression and Classification, part of the ML Specialization.</div>
               <div class="honour-chip">certification</div>
             </div>
           </div>
@@ -424,7 +526,7 @@
             <div>
               <div class="tl-title">B.Tech Computer Science &amp; Engineering</div>
               <div class="tl-meta"><div class="tl-sub">Shiv Nadar University, Noida</div><div class="tl-date">2024 – 2028</div></div>
-              <div class="tl-desc">CGPA: 9.32 · Minor in Mathematics · Dean's List 2024–25 — ranked top 10% of the CS cohort.</div>
+              <div class="tl-desc">CGPA: 9.25 · Minor in Mathematics · Dean's List 2024–25, ranked top 10% of the CS cohort.</div>
             </div>
           </div>
           <div class="tl-item">
@@ -432,7 +534,7 @@
             <div>
               <div class="tl-title">Class X &amp; XII · CBSE</div>
               <div class="tl-meta"><div class="tl-sub">Birla Balika Vidyapeeth, Pilani</div><div class="tl-date">2021 – 2024</div></div>
-              <div class="tl-desc">Class X: 97.4% · Class XII: 97% · School Rank 2.</div>
+              <div class="tl-desc">Class X: 97.6% · Class XII: 97% · School Rank 2.</div>
             </div>
           </div>
         </div>
@@ -442,6 +544,14 @@
           <div class="sec-head" style="margin-top:0;"><div class="sec-label">// languages</div><div class="sec-line"></div></div>
           <div class="skill-tags" style="gap:8px; margin-bottom:20px;">
             <span class="skill-tag">Python</span><span class="skill-tag">Java</span><span class="skill-tag">C</span><span class="skill-tag">R</span>
+          </div>
+          <div class="sec-head"><div class="sec-label">// ai &amp; llm agents</div><div class="sec-line"></div></div>
+          <div class="skill-tags" style="gap:8px; margin-bottom:20px;">
+            <span class="skill-tag">LangGraph</span><span class="skill-tag">FastAPI</span><span class="skill-tag">SQLAlchemy</span><span class="skill-tag">Pydantic</span><span class="skill-tag">LLM agent workflows</span><span class="skill-tag">Groq</span><span class="skill-tag">DeepSeek</span>
+          </div>
+          <div class="sec-head"><div class="sec-label">// web</div><div class="sec-line"></div></div>
+          <div class="skill-tags" style="gap:8px; margin-bottom:20px;">
+            <span class="skill-tag">Next.js</span><span class="skill-tag">React</span><span class="skill-tag">Svelte</span><span class="skill-tag">TypeScript</span>
           </div>
           <div class="sec-head"><div class="sec-label">// ml &amp; computer vision</div><div class="sec-line"></div></div>
           <div class="skill-tags" style="gap:8px; margin-bottom:20px;">

@@ -220,7 +220,11 @@ body { font-family: var(--font-sans); background: var(--bg); color: var(--text-h
 .about-h { font-size: var(--t-xl); font-weight: 500; color: var(--text-hi); margin-bottom: 5px; line-height: 1.2; }
 .about-h span { color: var(--accent); }
 .about-role { font-size: var(--t-sm); color: var(--text-faint); margin-bottom: 12px; font-family: var(--font-mono); }
-.about-bio { font-size: var(--t-base); color: var(--text-body); line-height: 1.85; }
+.about-greet { font-size: var(--t-sm); color: var(--text-mid); font-family: var(--font-mono); margin-bottom: 8px; letter-spacing: 0.02em; }
+.about-bio { font-size: var(--t-md); color: var(--text-body); line-height: 1.9; max-width: none; }
+.about-bio p { margin: 0 0 16px; }
+.about-bio p:last-child { margin-bottom: 0; }
+.about-bio strong { color: var(--text-hi); font-weight: 500; }
 
 /* ── EDU GRID ── */
 .edu-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
@@ -258,7 +262,13 @@ body { font-family: var(--font-sans); background: var(--bg); color: var(--text-h
 .research-desc { font-size: var(--t-base); color: var(--text-body); line-height: 1.85; margin-bottom: 10px; }
 .research-footer { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; }
 .research-chip { font-size: var(--t-xs); padding: 2px 8px; background: var(--chip-bg); border: 1px solid var(--border-hi); border-radius: 4px; color: var(--accent); font-family: var(--font-mono); }
-.research-doi { font-size: var(--t-xs); color: var(--text-dim); font-family: var(--font-mono); word-break: break-all; }
+.research-doi { font-size: var(--t-xs); color: var(--text-dim); font-family: var(--font-mono); word-break: break-all; text-decoration: none; }
+a.research-doi:hover { color: var(--accent); }
+.research-authors { font-size: var(--t-sm); color: var(--text-mid); margin-bottom: 8px; line-height: 1.6; }
+.research-authors b { color: var(--text-hi); font-weight: 500; }
+.research-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+.research-scholar { font-size: var(--t-xs); color: var(--accent); font-family: var(--font-mono); text-decoration: none; padding: 2px 8px; border: 1px solid var(--border-hi); border-radius: 4px; }
+.research-scholar:hover { background: var(--chip-bg); }
 
 /* ── PROJECT GRID ── */
 .proj-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
@@ -271,6 +281,8 @@ body { font-family: var(--font-sans); background: var(--bg); color: var(--text-h
 .proj-desc { font-size: var(--t-base); color: var(--text-body); line-height: 1.8; margin-bottom: 10px; }
 .proj-tags { display: flex; flex-wrap: wrap; gap: 5px; }
 .proj-tag { font-size: var(--t-xs); padding: 3px 7px; background: var(--tag-bg); border: 1px solid var(--tag-border); border-radius: 3px; color: var(--tag-text); font-family: var(--font-mono); }
+.proj-title-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.proj-badge { font-size: var(--t-xs); padding: 2px 7px; background: var(--chip-bg); border: 1px solid var(--border-hi); border-radius: 999px; color: var(--accent); font-family: var(--font-mono); letter-spacing: 0.04em; }
 
 /* ── HONOUR ── */
 .honour-item { display: grid; grid-template-columns: 2px 1fr; gap: 0 16px; margin-bottom: 22px; }
@@ -331,7 +343,7 @@ body { font-family: var(--font-sans); background: var(--bg); color: var(--text-h
 /* ── ABOUT: 2-col resume layout on wide screens ── */
 .rs-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 10px;
   align-items: start;
 }

@@ -108,7 +108,7 @@ body { font-family: var(--font-sans); background: var(--bg); color: var(--text-h
   display: flex; align-items: center; gap: 5px;
   background: none; text-decoration: none; transition: background 0.2s;
 }
-.resume-btn:hover { background: var(--chip-bg); }
+.resume-btn:hover { background: #111215; }
 .resume-btn span { display: none; }
 @media (min-width: 500px) { .resume-btn span { display: inline; } }
 

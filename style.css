@@ -302,7 +302,7 @@ a.research-doi:hover { color: var(--accent); }
   padding: clamp(13px,2vw,18px); margin-top: 10px;
   cursor: pointer; transition: border-color 0.15s, background 0.15s;
 }
-.rs-sec:hover { border-color: var(--accent-dk); background: var(--nav-active); }
+.rs-sec:hover { border-color: var(--accent-dk); background: var(--bg-card); }
 .rs-sec:first-of-type { margin-top: 16px; }
 .rs-sec-head {
   display: flex; align-items: center; justify-content: space-between;

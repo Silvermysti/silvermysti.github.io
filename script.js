@@ -76,8 +76,8 @@
     html.setAttribute('data-theme', isDark ? 'light' : 'dark');
     const icon = document.getElementById('theme-icon');
     icon.innerHTML = isDark
-      ? '<use href="#ico-moon"/>'
-      : '<use href="#ico-sun"/>';
+      ? '<use href="#ico-sun"/>'
+      : '<use href="#ico-moon"/>';
   }
 
   // init

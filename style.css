@@ -298,8 +298,9 @@ a.research-doi:hover { color: var(--accent); }
 .research-scholar:hover { background: var(--chip-bg); }
 
 /* ── PROJECT GRID ── */
-.proj-grid { columns: 2; column-gap: 12px; }
-.proj-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: clamp(13px,2vw,18px); break-inside: avoid; margin-bottom: 12px; display: block; }
+.proj-grid { display: flex; gap: 12px; align-items: flex-start; }
+.proj-col { display: flex; flex-direction: column; gap: 12px; flex: 1; min-width: 0; }
+.proj-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: clamp(13px,2vw,18px); }
 .proj-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
 .proj-title { font-size: var(--t-md); font-weight: 500; color: var(--text-hi); }
 .proj-icons { display: flex; gap: 8px; }
@@ -484,7 +485,7 @@ a.research-doi:hover { color: var(--accent); }
   .rs-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
-  .edu-grid { grid-template-columns: 1fr; } .proj-grid { columns: 1; }
+  .edu-grid { grid-template-columns: 1fr; } .proj-grid { flex-direction: column; }
   .skills-row { grid-template-columns: 1fr 1fr; }
   .rs-row { flex-direction: column; }
   .rs-row-right { text-align: left; }
@@ -528,7 +529,7 @@ body, .shell, .sb, .titlebar, .mc-tabs, .mc-body, .sb-top, .sb-nav-item,
   .sb-bottom { display: none; }
   .mc { height: calc(100dvh - 44px - 56px); }
   .mc-body { padding: 16px 14px 20px; }
-  .edu-grid { grid-template-columns: 1fr; } .proj-grid { columns: 1; }
+  .edu-grid { grid-template-columns: 1fr; } .proj-grid { flex-direction: column; }
   .skills-row { grid-template-columns: 1fr 1fr; }
 }
 
@@ -544,5 +545,5 @@ body, .shell, .sb, .titlebar, .mc-tabs, .mc-body, .sb-top, .sb-nav-item,
   .sb-nav-item span { display: none; }
   .sb-bottom { display: none; }
   .rs-grid { grid-template-columns: 1fr; }
-  .proj-grid { columns: 1; }
+  .proj-grid { flex-direction: column; }
 }

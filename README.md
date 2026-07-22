@@ -52,9 +52,10 @@ skills    honours       education   organisations
 
 ```json
 {
-  "markup":  "HTML — index.html",
-  "styles":  "CSS — style.css (498 lines, custom properties + clamp())",
-  "logic":   "JS  — script.js (tab routing + theme toggle)",
+  "markup":  "HTML — index.html  (789 lines)",
+  "styles":  "CSS  — style.css   (548 lines, custom properties + clamp())",
+  "logic":   "JS   — script.js   (83 lines, tab routing + theme toggle)",
+  "assets":  ["banner.svg", "profile.png", "resume.pdf"],
   "icons":   "inline SVG sprite",
   "fonts":   ["DM Sans", "DM Mono"]
 }

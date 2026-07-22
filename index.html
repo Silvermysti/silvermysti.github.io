@@ -184,6 +184,21 @@
               <div class="rs-bullet">Engineered a multi-agent LLM system for automotive warranty claims: structured-output decisioning across intake, coverage, fraud &amp; recommendation agents on a LangGraph pipeline with human-in-the-loop approval</div>
               <div class="rs-bullet">Built a bounded conversational intake agent with conditional vision-evidence requests across fast/standard model tiers (Groq / DeepSeek)</div>
             </div>
+            <details class="research-more" onclick="event.stopPropagation()">
+              <summary>Read full details</summary>
+              <div class="research-more-body">
+                <div class="rm-h">What was built</div>
+                <p>An <b>Automotive After-Sales AI Command Center</b> — a 3-tier LangGraph agent hierarchy automating warranty claims, product recalls, and parts management. Four role-based portals: <b>Customer</b> (guided intake chat + live status tracker), <b>Manager</b> (approval queue + AI reasoning chain + live agent monitor + audit log), <b>Dealer</b> (open jobs + parts inventory), and <b>Admin</b> (recall management).</p>
+                <div class="rm-h">Key design decisions</div>
+                <p><b>Structured output, not tool-calling</b> — the LLM returns a Pydantic decision object; plain Python handles all DB queries and business logic, keeping decisions deterministic and testable. <b>Tiered autonomy</b> — low-cost, high-confidence, low-fraud claims auto-approve; everything else queues for manager review. <b>Policy RAG</b> — every decision cites the exact warranty clause it relied on, so the reasoning is grounded in actual policy, not invented by the model.</p>
+                <div class="rm-h">Fraud &amp; quality</div>
+                <p>A dedicated fraud node scores each claim against the vehicle's and owner's claim history. An <b>LLM-as-judge eval pipeline</b> runs labelled claim scenarios through the real pipeline and scores reasoning quality — measuring decision and coverage accuracy, not just uptime. CSAT collection is built in: customers rate resolved claims 1–5 stars; the manager dashboard tracks average satisfaction alongside approval rate and automation rate.</p>
+                <div class="rm-h">Tech stack</div>
+                <p><b>Backend:</b> Python · FastAPI · LangGraph · SQLAlchemy · Pydantic · SQLite (dev) / PostgreSQL (prod) · 40 pytest tests (LLM calls monkeypatched for offline runs)</p>
+                <p><b>Frontend:</b> Next.js · TypeScript · SSE live agent monitor via EventSource</p>
+                <p><b>LLM:</b> Groq · DeepSeek · Ollama · Docker Compose for full-stack local runs</p>
+              </div>
+            </details>
             <div class="rs-row" style="margin-top:10px;">
               <div class="rs-row-left">
                 <div class="rs-title">Research Intern</div>
@@ -366,6 +381,21 @@
               <div class="tl-meta"><div class="tl-sub">Tech Mahindra, NSEZ Noida</div><div class="tl-date">May – Jul 2026</div></div>
               <div class="tl-desc">Engineered a multi-agent LLM system for automotive warranty claims: structured-output (Pydantic function-calling) decisioning across intake, coverage, fraud, and recommendation agents on a LangGraph pipeline with human-in-the-loop approval. Built a bounded conversational intake agent with conditional vision-evidence requests, tuning prompts and decision logic across fast/standard model tiers (Groq / DeepSeek).</div>
               <div class="tl-chip">current · LLM agents</div>
+              <details class="research-more">
+                <summary>Read full details</summary>
+                <div class="research-more-body">
+                  <div class="rm-h">What was built</div>
+                  <p>An <b>Automotive After-Sales AI Command Center</b> — a 3-tier LangGraph agent hierarchy automating warranty claims, product recalls, and parts management. Four role-based portals: <b>Customer</b> (guided intake chat + live status tracker), <b>Manager</b> (approval queue + AI reasoning chain + live agent monitor + audit log), <b>Dealer</b> (open jobs + parts inventory), and <b>Admin</b> (recall management).</p>
+                  <div class="rm-h">Key design decisions</div>
+                  <p><b>Structured output, not tool-calling</b> — the LLM returns a Pydantic decision object; plain Python handles all DB queries and business logic, keeping decisions deterministic and testable. <b>Tiered autonomy</b> — low-cost, high-confidence, low-fraud claims auto-approve; everything else queues for manager review. <b>Policy RAG</b> — every decision cites the exact warranty clause it relied on, so the reasoning is grounded in actual policy, not invented by the model.</p>
+                  <div class="rm-h">Fraud &amp; quality</div>
+                  <p>A dedicated fraud node scores each claim against the vehicle's and owner's claim history. An <b>LLM-as-judge eval pipeline</b> runs labelled claim scenarios through the real pipeline and scores reasoning quality — measuring decision and coverage accuracy, not just uptime. CSAT collection is built in: customers rate resolved claims 1–5 stars; the manager dashboard tracks average satisfaction alongside approval rate and automation rate.</p>
+                  <div class="rm-h">Tech stack</div>
+                  <p><b>Backend:</b> Python · FastAPI · LangGraph · SQLAlchemy · Pydantic · SQLite (dev) / PostgreSQL (prod) · 40 pytest tests (LLM calls monkeypatched for offline runs)</p>
+                  <p><b>Frontend:</b> Next.js · TypeScript · SSE live agent monitor via EventSource</p>
+                  <p><b>LLM:</b> Groq · DeepSeek · Ollama · Docker Compose for full-stack local runs</p>
+                </div>
+              </details>
             </div>
           </div>
           <div class="tl-item">

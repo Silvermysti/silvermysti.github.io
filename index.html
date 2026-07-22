@@ -212,6 +212,19 @@
               <div class="rs-bullet">Built CNN models for radio-signal modulation classification on the DeepSig RadioML 2018.01A dataset using FFT-based spectral features</div>
               <div class="rs-bullet">Collaborated with EEE faculty on deep learning for wireless communication research</div>
             </div>
+            <details class="research-more" onclick="event.stopPropagation()">
+              <summary>Read full details</summary>
+              <div class="research-more-body">
+                <div class="rm-h">What was built</div>
+                <p>A replication of the VGG-style 1D CNN from O'Shea, Roy &amp; Clancy (IEEE J-STSP 2018) for <b>automatic modulation classification</b>. The network takes raw I/Q radio samples and identifies the modulation scheme — no Fourier transform, no hand-crafted features. Also implemented a <b>ResNet variant</b> with skip connections for comparison. Both models trained on a CPU in ~5 minutes.</p>
+                <div class="rm-h">Results</div>
+                <p><b>VGG CNN:</b> 81.1% overall test accuracy, <b>99.4% on clean signals</b> — matching the paper's high-SNR result. <b>ResNet:</b> 82.1% overall. The bottleneck is data quality (noise), not architecture: both models hit the same noise ceiling, which reproduces the S-curve the paper reports.</p>
+                <div class="rm-h">Key contribution</div>
+                <p>With no per-example SNR labels in the dataset, SNR was estimated blind using two signal statistics — <b>spectral flatness</b> and <b>lag-1 autocorrelation</b>. The two proxies agreed at <b>r = −0.996</b>, validating a method for recovering the accuracy-vs-SNR curve without metadata.</p>
+                <div class="rm-h">Tech stack</div>
+                <p>Python · TensorFlow · Scikit-learn · NumPy · Matplotlib · DeepSig RadioML 2018.01A (19.5 GB, memory-mapped)</p>
+              </div>
+            </details>
           </div>
 
             </div><!-- /rs-col left -->
@@ -404,6 +417,19 @@
               <div class="tl-title">Research Intern</div>
               <div class="tl-meta"><div class="tl-sub">5G Use Case Lab, BITS Pilani</div><div class="tl-date">Jun – Jul 2025</div></div>
               <div class="tl-desc">Built CNN models for radio-signal modulation classification on the DeepSig RadioML 2018.01A dataset, using FFT-based spectral features as model input. Collaborated with EEE faculty on deep learning for wireless communication research.</div>
+              <details class="research-more">
+                <summary>Read full details</summary>
+                <div class="research-more-body">
+                  <div class="rm-h">What was built</div>
+                  <p>A replication of the VGG-style 1D CNN from O'Shea, Roy &amp; Clancy (IEEE J-STSP 2018) for <b>automatic modulation classification</b>. The network takes raw I/Q radio samples and identifies the modulation scheme — no Fourier transform, no hand-crafted features. Also implemented a <b>ResNet variant</b> with skip connections for comparison. Both models trained on a CPU in ~5 minutes.</p>
+                  <div class="rm-h">Results</div>
+                  <p><b>VGG CNN:</b> 81.1% overall test accuracy, <b>99.4% on clean signals</b> — matching the paper's high-SNR result. <b>ResNet:</b> 82.1% overall. The bottleneck is data quality (noise), not architecture: both models hit the same noise ceiling, which reproduces the S-curve the paper reports.</p>
+                  <div class="rm-h">Key contribution</div>
+                  <p>With no per-example SNR labels in the dataset, SNR was estimated blind using two signal statistics — <b>spectral flatness</b> and <b>lag-1 autocorrelation</b>. The two proxies agreed at <b>r = −0.996</b>, validating a method for recovering the accuracy-vs-SNR curve without metadata.</p>
+                  <div class="rm-h">Tech stack</div>
+                  <p>Python · TensorFlow · Scikit-learn · NumPy · Matplotlib · DeepSig RadioML 2018.01A (19.5 GB, memory-mapped)</p>
+                </div>
+              </details>
             </div>
           </div>
         </div>
@@ -557,6 +583,29 @@
               </div>
               <div class="proj-desc">Automated photo clustering using face detection to group individuals across large image collections. Quality-based multi-reference matching with automatic merge detection; integrates CodeFormer for face enhancement.</div>
               <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">face_recognition</span><span class="proj-tag">OpenCV</span><span class="proj-tag">NumPy</span></div>
+            </div>
+            <div class="proj-card">
+              <div class="proj-top">
+                <div class="proj-title">5G Radio Signal Modulation Classifier</div>
+                <div class="proj-icons"><a href="https://github.com/Silvermysti/5G-Signal-Modulation" target="_blank"><span class="ico"><svg width="1em" height="1em"><use href="#ico-github"/></svg></span></a></div>
+              </div>
+              <div class="proj-desc">Replication of a landmark deep-learning paper (O'Shea, Roy &amp; Clancy, IEEE J-STSP 2018) for radio-signal modulation classification. A VGG-style 1D CNN takes raw I/Q samples and identifies the modulation scheme — no hand-crafted features. Achieves 99.4% accuracy on clean signals, matching the paper's high-SNR result, on a CPU laptop in 5 minutes.</div>
+              <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">TensorFlow</span><span class="proj-tag">Scikit-learn</span><span class="proj-tag">NumPy</span><span class="proj-tag">1D CNN</span><span class="proj-tag">ResNet</span></div>
+              <details class="research-more">
+                <summary>Read full details</summary>
+                <div class="research-more-body">
+                  <div class="rm-h">The problem</div>
+                  <p>Given a raw 1024-sample I/Q radio snippet, which modulation scheme produced it? This is a core task in <b>automatic modulation classification (AMC)</b> — used in cognitive radio, spectrum monitoring, and 5G signal processing. The network sees <b>raw I/Q samples only</b>; no Fourier transform, no hand-crafted features. It learns its own internal representations, following the central thesis of the paper.</p>
+                  <div class="rm-h">Architecture</div>
+                  <p>Two models were built. <b>VGG CNN</b>: 7 blocks of Conv1D(64, kernel 3, ReLU) → BatchNorm → MaxPool/2, compressing 1024 timesteps down to 8, followed by two Dense(128, SELU) + AlphaDropout layers and a 3-class softmax head — 158,915 parameters, layer-for-layer from the paper. <b>ResNet</b>: same backbone with skip connections added — 165,507 parameters. Both trained with Adam + cross-entropy + early stopping on a CPU laptop in ~5 minutes.</p>
+                  <div class="rm-h">Results</div>
+                  <p><b>VGG:</b> 81.1% overall test accuracy, <b>99.4% on the cleanest 60%</b> of signals, ~42% on the noisiest 30% (random guessing = 33%). <b>ResNet:</b> 82.1% overall, with better FM recall (91.2% vs 80.1%) at the cost of more false positives. The flat 81–82% hides two regimes: near-perfect where the signal carries information, near-chance where noise has destroyed the modulation before capture. That is an information limit, not a model weakness — it reproduces the S-curve the paper reports.</p>
+                  <div class="rm-h">Blind SNR estimation</div>
+                  <p>The paper reports accuracy as a curve against SNR, but the dataset files don't store per-example SNR. SNR was estimated blind from the signal using two independent statistics: <b>spectral flatness</b> (noise spreads energy evenly across frequencies) and <b>lag-1 autocorrelation</b> (noise samples are uncorrelated). The two proxies agree at <b>r = −0.996</b> — a near-perfect correlation — validating the approach.</p>
+                  <div class="rm-h">Dataset</div>
+                  <p>DeepSig <b>RadioML 2018.01A</b> — 2.55M examples across 24 modulations, 19.5 GB. Trained on 3 physically distinct modulations (OOK, QPSK, FM) using 15,000 examples. The full dataset is memory-mapped rather than loaded into RAM, since it would not fit in memory.</p>
+                </div>
+              </details>
             </div>
           </div>
         </div>

@@ -514,7 +514,7 @@
         <div class="page" id="page-projects">
           <div class="proj-grid">
 
-            <!-- LEFT COLUMN: Hephaestus, ReferIn, Ori, 5G -->
+            <!-- LEFT COLUMN: Hephaestus, ReferIn, Ori, 5G, Iris -->
             <div class="proj-col">
               <div class="proj-card">
                 <div class="proj-top">
@@ -534,15 +534,15 @@
                   </div>
                   <div class="proj-icons"><a href="https://github.com/aishwarya-mol-2046/referai" target="_blank"><span class="ico"><svg width="1em" height="1em"><use href="#ico-github"/></svg></span></a></div>
                 </div>
-                <div class="proj-desc">A hiring network built on warm intros. Paste any job description and it extracts the role via DeepSeek, ranks potential internal referrers by TF-IDF fit against your profile, and sources them live from GitHub org members (supplemented by AI suggestions). Drafts a personalised outreach message per referrer, tracks who you've already contacted, and turns your resume into a profile automatically.</div>
-                <div class="proj-tags"><span class="proj-tag">React</span><span class="proj-tag">Flask</span><span class="proj-tag">DeepSeek</span><span class="proj-tag">GitHub API</span><span class="proj-tag">TF-IDF</span></div>
+                <div class="proj-desc">A hiring network built on warm intros. Paste any job description and DeepSeek extracts the role, then ranks potential referrers by TF-IDF cosine similarity against your profile, sourcing them live from GitHub org members with AI-suggested supplements. Drafts a personalised outreach per referrer, tracks contacted status across searches, parses your resume into a profile automatically, and includes a built-in job search via JSearch.</div>
+                <div class="proj-tags"><span class="proj-tag">React 19</span><span class="proj-tag">Vite</span><span class="proj-tag">Tailwind CSS</span><span class="proj-tag">Flask</span><span class="proj-tag">DeepSeek</span><span class="proj-tag">GitHub API</span><span class="proj-tag">TF-IDF</span><span class="proj-tag">Ollama</span></div>
               </div>
               <div class="proj-card">
                 <div class="proj-top">
                   <div class="proj-title">Ori</div>
                   <div class="proj-icons"><a href="https://github.com/Silvermysti/Ori" target="_blank"><span class="ico"><svg width="1em" height="1em"><use href="#ico-github"/></svg></span></a></div>
                 </div>
-                <div class="proj-desc">A pixel-art task scheduler app built on one idea: urgency = temperature. Every task carries a "heat" from 0–4 (CHILL → NOW!) that maps to a warm-earthy colour, so your day reads at a glance. A React + Vite prototype now being packaged into an installable Android app with Capacitor.</div>
+                <div class="proj-desc">A pixel-art task scheduler built on one idea: urgency = temperature. Every task carries a heat from 0–4 (CHILL to NOW!) that maps to a warm-earthy colour so your day reads at a glance. A React + Vite prototype being packaged into an installable Android app with Capacitor.</div>
                 <div class="proj-tags"><span class="proj-tag">React</span><span class="proj-tag">Vite</span><span class="proj-tag">Capacitor</span><span class="proj-tag">Android</span></div>
               </div>
               <div class="proj-card">
@@ -550,7 +550,7 @@
                   <div class="proj-title">5G Radio Signal Modulation Classifier</div>
                   <div class="proj-icons"><a href="https://github.com/Silvermysti/5G-Signal-Modulation" target="_blank"><span class="ico"><svg width="1em" height="1em"><use href="#ico-github"/></svg></span></a></div>
                 </div>
-                <div class="proj-desc">Replication of a landmark deep-learning paper (O'Shea, Roy &amp; Clancy, IEEE J-STSP 2018) for radio-signal modulation classification. A VGG-style 1D CNN takes raw I/Q samples and identifies the modulation scheme — no hand-crafted features. Achieves 99.4% accuracy on clean signals, matching the paper's high-SNR result, on a CPU laptop in 5 minutes.</div>
+                <div class="proj-desc">Replication of O'Shea, Roy &amp; Clancy (IEEE J-STSP 2018) for automatic radio modulation classification. A VGG-style 1D CNN reads raw I/Q samples with no hand-crafted features and achieves 99.4% accuracy on clean signals — matching the paper's high-SNR result — trained on a CPU in 5 minutes. Also implements a ResNet variant and blind SNR estimation via spectral flatness and lag-1 autocorrelation (r = −0.996).</div>
                 <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">TensorFlow</span><span class="proj-tag">Scikit-learn</span><span class="proj-tag">NumPy</span><span class="proj-tag">1D CNN</span><span class="proj-tag">ResNet</span></div>
                 <details class="research-more">
                   <summary>Read full details</summary>
@@ -568,9 +568,17 @@
                   </div>
                 </details>
               </div>
+              <div class="proj-card">
+                <div class="proj-top">
+                  <div class="proj-title">Iris Flower Classification</div>
+                  <div class="proj-icons"><a href="https://github.com/Silvermysti/Iris-Flower-Classification" target="_blank"><span class="ico"><svg width="1em" height="1em"><use href="#ico-github"/></svg></span></a></div>
+                </div>
+                <div class="proj-desc">Comparison of Random Forest and XGBoost for classifying Iris species from sepal and petal measurements. Includes exploratory data analysis (pair plots, 3D scatter, statistical summaries), feature importance analysis, confusion matrices, and cross-validation. Petal measurements emerge as the dominant discriminators; both models exceed 95% accuracy.</div>
+                <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">Scikit-learn</span><span class="proj-tag">XGBoost</span><span class="proj-tag">Pandas</span><span class="proj-tag">Matplotlib</span><span class="proj-tag">Seaborn</span></div>
+              </div>
             </div><!-- /proj-col left -->
 
-            <!-- RIGHT COLUMN: Warranty, Sidestep, Face Recognition -->
+            <!-- RIGHT COLUMN: Warranty, Sidestep, SmartPlate, Face Recognition, Whack-a-Mole -->
             <div class="proj-col">
               <div class="proj-card">
                 <div class="proj-top">
@@ -603,8 +611,40 @@
                   <div class="proj-title">Sidestep</div>
                   <div class="proj-icons"><a href="https://github.com/Silvermysti/sidestep" target="_blank"><span class="ico"><svg width="1em" height="1em"><use href="#ico-github"/></svg></span></a></div>
                 </div>
-                <div class="proj-desc">A gentle focus browser extension that intercepts distracting sites and redirects you toward your own stated goals, nudging rather than hard-blocking. Built with the WXT extension framework and a Svelte UI.</div>
-                <div class="proj-tags"><span class="proj-tag">Svelte</span><span class="proj-tag">WXT</span><span class="proj-tag">Browser Extension</span></div>
+                <div class="proj-desc">A Chrome focus extension that substitutes distracting sites with useful links you saved — no block walls, just a gentle redirect to a calm night scene with a sleeping pixel bunny. Includes a Pomodoro timer that runs in the background even when the popup is closed, a thought parking lot so stray ideas don't become rabbit holes, and a per-site freedom window for when you genuinely need a blocked site. Built for HackWave 2026.</div>
+                <div class="proj-tags"><span class="proj-tag">Svelte 5</span><span class="proj-tag">WXT</span><span class="proj-tag">Chrome MV3</span><span class="proj-tag">Browser Extension</span></div>
+                <details class="research-more">
+                  <summary>Read full details</summary>
+                  <div class="research-more-body">
+                    <div class="rm-h">The idea</div>
+                    <p>Most focus apps <b>block</b> distracting sites and put up a wall — which makes you want to turn the tool off. Sidestep does the opposite: when you reach for a distracting site during a focus session, it <b>quietly redirects you to one of your own saved useful links instead</b>. Same impulse, better destination. Substitution, not blocking.</p>
+                    <div class="rm-h">Features</div>
+                    <p><b>Substitution engine</b> — during a session, any site on your list redirects to a useful link you saved. <b>Bunny companion</b> — an animated pixel bunny hops while you focus and sleeps on the redirect page (no guilt screen). <b>Thought parking lot</b> — jot down the stray thought that pulled you away; it waits in the popup rather than becoming a rabbit hole. <b>Focus timer</b> — Pomodoro timer keeps running in the background even with the popup closed. <b>Freedom window</b> — allow one site for 5, 15, or 30 minutes without disabling the whole session.</p>
+                    <div class="rm-h">Architecture</div>
+                    <p>One background <b>service worker</b> (Chrome Manifest V3) owns the timer and watches page navigations. The popup sends it commands and reads state from storage, so sessions survive popup closes. The redirect page and popup are both built in <b>Svelte 5</b> using WXT's hot-reload dev tooling. No external dependencies at runtime.</p>
+                  </div>
+                </details>
+              </div>
+              <div class="proj-card">
+                <div class="proj-top">
+                  <div class="proj-title">SmartPlate</div>
+                  <div class="proj-icons"><a href="https://github.com/Silvermysti/SmartPlate" target="_blank"><span class="ico"><svg width="1em" height="1em"><use href="#ico-github"/></svg></span></a></div>
+                </div>
+                <div class="proj-desc">A full-stack canteen management system with five role-based dashboards: customers browse and order, chefs track active orders, employees manage ingredient batches, suppliers update stock and pricing, and managers oversee the full operation including menu, ingredients, demand forecasting, and gift codes. Backed by MySQL stored procedures and a FastAPI REST API with JWT auth.</div>
+                <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">FastAPI</span><span class="proj-tag">MySQL</span><span class="proj-tag">Pydantic</span><span class="proj-tag">JWT</span><span class="proj-tag">Vanilla JS</span></div>
+                <details class="research-more">
+                  <summary>Read full details</summary>
+                  <div class="research-more-body">
+                    <div class="rm-h">Roles and portals</div>
+                    <p><b>Customer</b> — browse menu by category, place orders item by item, apply gift codes. <b>Chef</b> — live queue of active orders with per-item status updates. <b>Employee</b> — log incoming ingredient batches, view supplier options per ingredient. <b>Supplier</b> — manage the ingredients they supply, update pricing, confirm deliveries. <b>Manager</b> — full control: add/edit menu items and ingredients, run demand forecasts for a target date with a configurable safety margin, issue gift codes, view allergen and category metadata.</p>
+                    <div class="rm-h">Backend design</div>
+                    <p>Business logic lives in <b>MySQL stored procedures</b> — order placement, batch logging, and supply updates are all called via <code>callproc</code>, not raw SQL in Python. FastAPI surfaces them through a typed REST API with <b>JWT role-based access control</b>: each endpoint uses <code>require_role()</code> to gate access. Custom MySQL SIGNAL errors (SQLSTATE 45000) bubble up as HTTP 400s with user-facing messages, so the DB enforces constraints and the API surfaces them cleanly.</p>
+                    <div class="rm-h">Demand forecasting</div>
+                    <p>The manager can trigger a forecast for a target date with a configurable <b>safety multiplier</b> (default 1.5×). The system looks back at historical order quantities per ingredient and projects how much stock will be needed, so the kitchen never runs short mid-service.</p>
+                    <div class="rm-h">Tech stack</div>
+                    <p>Python · FastAPI · MySQL · Pydantic · JWT (python-jose) · Vanilla JS / HTML dashboards (no framework) · pytest test suite</p>
+                  </div>
+                </details>
               </div>
               <div class="proj-card">
                 <div class="proj-top">
@@ -613,6 +653,25 @@
                 </div>
                 <div class="proj-desc">Automated photo clustering using face detection to group individuals across large image collections. Quality-based multi-reference matching with automatic merge detection; integrates CodeFormer for face enhancement.</div>
                 <div class="proj-tags"><span class="proj-tag">Python</span><span class="proj-tag">face_recognition</span><span class="proj-tag">OpenCV</span><span class="proj-tag">NumPy</span></div>
+              </div>
+              <div class="proj-card">
+                <div class="proj-top">
+                  <div class="proj-title">Whack-a-Mole</div>
+                  <div class="proj-icons"><a href="https://github.com/Silvermysti/Whack-a-Mole" target="_blank"><span class="ico"><svg width="1em" height="1em"><use href="#ico-github"/></svg></span></a></div>
+                </div>
+                <div class="proj-desc">Java arcade game built as a CSE coursework project at BITS Pilani. Features regular moles (+100), bombs (−500), and bonus moles (+1000) spawned over a 60-second round. Designed around a two-thread architecture (GUI thread + game engine thread) with SwingUtilities.invokeLater() for thread-safe updates, custom checked/unchecked exceptions, and persistent high-score serialization.</div>
+                <div class="proj-tags"><span class="proj-tag">Java</span><span class="proj-tag">Swing</span><span class="proj-tag">Multithreading</span><span class="proj-tag">OOP</span><span class="proj-tag">Serialization</span></div>
+                <details class="research-more">
+                  <summary>Read full details</summary>
+                  <div class="research-more-body">
+                    <div class="rm-h">Design</div>
+                    <p>All game objects extend an abstract <b>HoleOccupant</b> class. Each type implements its own <code>whack()</code> — returning +100, −500, or +1000 — so the game engine never needs <code>instanceof</code> checks. Adding a new object type requires one new class and zero changes to existing code.</p>
+                    <div class="rm-h">Concurrency</div>
+                    <p>A <b>two-thread design</b>: the EDT (Event Dispatch Thread) handles all GUI rendering and user clicks; a separate game engine thread owns the 60-second countdown and spawns objects every 500ms (60% mole, 30% bomb, 10% bonus). All engine → GUI updates go through <code>SwingUtilities.invokeLater()</code>. Graceful shutdown: closing the window interrupts the engine thread which exits by setting <code>keepGameRunning = false</code>.</p>
+                    <div class="rm-h">Exception handling &amp; persistence</div>
+                    <p><b>HighScoreException</b> (checked) handles file I/O for the serialized high-score list at <code>~/.whackamole/highscores.dat</code>. <b>InvalidGameStateException</b> (unchecked) catches programming errors like accessing a non-existent hole. Top 10 scores persist across sessions and survive moving the game folder.</p>
+                  </div>
+                </details>
               </div>
             </div><!-- /proj-col right -->
 

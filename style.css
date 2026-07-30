@@ -148,8 +148,10 @@ body { font-family: var(--font-sans); background: var(--bg); color: var(--text-h
   font-family: var(--font-mono); border-left: 2px solid transparent;
   cursor: pointer; transition: all 0.15s; user-select: none;
 }
-.sb-nav-item:hover { color: var(--text-mid); background: var(--nav-active); }
+.sb-nav-item:hover { color: var(--text-hi); background: var(--nav-active); border-left-color: var(--text-dim); }
+.sb-nav-item:hover .ico { color: var(--accent); }
 .sb-nav-item.active { color: var(--accent); border-left-color: var(--accent); background: var(--nav-active); }
+.sb-nav-item.active .ico { color: var(--accent); }
 .sb-nav-item i { font-size: var(--t-md); flex-shrink: 0; }
 /* hide text labels on narrow sidebar */
 @media (max-width: 640px) { .sb-nav-item span { display: none; } }
@@ -207,23 +209,23 @@ body { font-family: var(--font-sans); background: var(--bg); color: var(--text-h
   white-space: nowrap; cursor: pointer; transition: color 0.15s;
   user-select: none; border-bottom: 2px solid transparent; flex-shrink: 0;
 }
-.mc-tab:hover { color: var(--text-mid); }
+.mc-tab:hover { color: var(--text-hi); background: var(--bg-card); border-bottom-color: var(--text-dim); }
 .mc-tab.active { color: var(--text-hi); background: var(--bg); border-bottom-color: var(--accent); }
 .mc-tab .tab-close {
-  font-size: 11px; opacity: 0; margin-left: 4px;
-  padding: 1px 4px; border-radius: 4px;
+  font-size: 14px; opacity: 0; margin-left: 6px;
+  padding: 2px 5px; border-radius: 4px;
   transition: opacity 0.15s, color 0.15s, background 0.12s, transform 0.1s;
   line-height: 1;
 }
-.mc-tab:hover .tab-close { opacity: 0.55; }
-.mc-tab.active .tab-close { opacity: 0.45; }
+.mc-tab:hover .tab-close { opacity: 0.65; }
+.mc-tab.active .tab-close { opacity: 0.5; }
 .mc-tab .tab-close:hover {
   opacity: 1 !important;
   color: #e05c5c;
   background: rgba(224, 92, 92, 0.15);
-  transform: scale(1.2);
+  transform: scale(1.15);
 }
-.mc-tab .tab-close:active { transform: scale(0.95); }
+.mc-tab .tab-close:active { transform: scale(0.9); }
 .mc-tab i { font-size: var(--t-sm); }
 
 .mc-body {

@@ -12,14 +12,15 @@
     'ico-users':      '<svg width="13" height="13"><use href="#ico-users"/></svg>',
   };
   const TABS = {
-    about:         { icon: 'ico-user',       label: 'about.md'          },
-    experience:    { icon: 'ico-briefcase',  label: 'experience.json'   },
-    research:      { icon: 'ico-flask',      label: 'research.md'       },
-    projects:      { icon: 'ico-code',       label: 'projects.py'       },
-    honours:       { icon: 'ico-trophy',     label: 'honours+certs.md'  },
-    education:     { icon: 'ico-school',     label: 'education.md'      },
-    skills:        { icon: 'ico-cpu',        label: 'skills.json'       },
-    organisations: { icon: 'ico-users',      label: 'organisations.md'  },
+    about:            { icon: 'ico-user',       label: 'about.md'           },
+    experience:       { icon: 'ico-briefcase',  label: 'experience.json'    },
+    research:         { icon: 'ico-flask',      label: 'research.md'        },
+    projects:         { icon: 'ico-code',       label: 'projects.py'        },
+    honours:          { icon: 'ico-trophy',     label: 'honours.md'         },
+    certifications:   { icon: 'ico-school',     label: 'certifications.md'  },
+    education:        { icon: 'ico-school',     label: 'education.md'       },
+    skills:           { icon: 'ico-cpu',        label: 'skills.json'        },
+    organisations:    { icon: 'ico-users',      label: 'organisations.md'   },
   };
 
   // open tabs state — only about is open initially
@@ -78,6 +79,16 @@
     icon.innerHTML = isDark
       ? '<use href="#ico-sun"/>'
       : '<use href="#ico-moon"/>';
+  }
+
+  // ── COPY TO CLIPBOARD ──
+  function copyVal(btn, text) {
+    navigator.clipboard.writeText(text).then(() => {
+      const orig = btn.innerHTML;
+      btn.innerHTML = '<svg width="1em" height="1em" style="stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round"><use href="#ico-check"/></svg>';
+      btn.classList.add('copied');
+      setTimeout(() => { btn.innerHTML = orig; btn.classList.remove('copied'); }, 1500);
+    });
   }
 
   // init

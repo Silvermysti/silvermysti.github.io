@@ -27,6 +27,8 @@
   <symbol id="ico-download" viewBox="0 0 24 24"><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/><polyline points="7 11 12 16 17 11"/><line x1="12" y1="4" x2="12" y2="16"/></symbol>
   <symbol id="ico-mouse" viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="6"/><line x1="12" y1="7" x2="12" y2="11"/></symbol>
   <symbol id="ico-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+  <symbol id="ico-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+  <symbol id="ico-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
 </svg>
 <link rel="stylesheet" href="style.css">
 </head>
@@ -97,14 +99,14 @@
       <div class="sb-bottom">
         <div>
           <div class="sb-block-label">// contact</div>
-          <div class="sb-contact-item"><span class="ico"><svg width="1em" height="1em"><use href="#ico-mail"/></svg></span><span class="sb-contact-val">bb916@snu.edu.in</span></div>
-          <div class="sb-contact-item"><span class="ico"><svg width="1em" height="1em"><use href="#ico-phone"/></svg></span><span class="sb-contact-val">88904 72117</span></div>
+          <div class="sb-contact-item"><span class="ico"><svg width="1em" height="1em"><use href="#ico-mail"/></svg></span><span class="sb-contact-val">bandybreeti@gmail.com</span><button class="copy-btn" onclick="copyVal(this,'bandybreeti@gmail.com')" title="Copy email"><svg width="1em" height="1em"><use href="#ico-copy"/></svg></button></div>
+          <div class="sb-contact-item"><span class="ico"><svg width="1em" height="1em"><use href="#ico-phone"/></svg></span><span class="sb-contact-val">88904 72117</span><button class="copy-btn" onclick="copyVal(this,'8890472117')" title="Copy number"><svg width="1em" height="1em"><use href="#ico-copy"/></svg></button></div>
           <div class="sb-contact-item"><span class="ico"><svg width="1em" height="1em"><use href="#ico-map-pin"/></svg></span><span class="sb-contact-val">Greater Noida, Uttar Pradesh</span></div>
         </div>
         <div>
           <div class="sb-block-label">// profiles</div>
-          <a href="https://github.com/Silvermysti" target="_blank" class="sb-plink"><span class="ico"><svg width="1em" height="1em"><use href="#ico-github"/></svg></span>github.com/Silvermysti</a>
-          <a href="https://www.linkedin.com/in/breeti-bandyopadhyay-68894b31a/" target="_blank" class="sb-plink"><span class="ico"><svg width="1em" height="1em"><use href="#ico-linkedin"/></svg></span>in/breeti-bandyopadhyay</a>
+          <div class="sb-plink-row"><a href="https://github.com/Silvermysti" target="_blank" class="sb-plink"><span class="ico"><svg width="1em" height="1em"><use href="#ico-github"/></svg></span>github.com/Silvermysti</a><button class="copy-btn" onclick="copyVal(this,'https://github.com/Silvermysti')" title="Copy URL"><svg width="1em" height="1em"><use href="#ico-copy"/></svg></button></div>
+          <div class="sb-plink-row"><a href="https://www.linkedin.com/in/breeti-bandyopadhyay-68894b31a/" target="_blank" class="sb-plink"><span class="ico"><svg width="1em" height="1em"><use href="#ico-linkedin"/></svg></span>in/breeti-bandyopadhyay</a><button class="copy-btn" onclick="copyVal(this,'https://www.linkedin.com/in/breeti-bandyopadhyay-68894b31a/')" title="Copy URL"><svg width="1em" height="1em"><use href="#ico-copy"/></svg></button></div>
         </div>
       </div>
     </aside>

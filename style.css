@@ -167,15 +167,27 @@ body { font-family: var(--font-sans); background: var(--bg); color: var(--text-h
 .sb-contact-item { display: flex; align-items: center; gap: 9px; margin-bottom: 7px; }
 .sb-contact-item:last-child { margin-bottom: 0; }
 .sb-contact-item i { font-size: var(--t-md); color: var(--accent); flex-shrink: 0; }
-.sb-contact-val { font-size: var(--t-sm); color: var(--text-body); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sb-contact-val { font-size: var(--t-sm); color: var(--text-body); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; }
+.copy-btn {
+  flex-shrink: 0; margin-left: auto; background: none; border: none; cursor: pointer;
+  color: var(--text-dim); padding: 2px 4px; border-radius: 4px;
+  display: flex; align-items: center; transition: color 0.15s, background 0.15s;
+}
+.copy-btn:hover { color: var(--accent); background: var(--bg-hover, rgba(0,0,0,0.06)); }
+.copy-btn.copied { color: var(--accent); }
+.copy-btn svg { stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.sb-plink-row { display: flex; align-items: center; gap: 6px; margin-bottom: 6px; }
+.sb-plink-row:last-child { margin-bottom: 0; }
+.sb-plink-row .sb-plink { margin-bottom: 0; flex: 1; min-width: 0; }
+.sb-plink-row .copy-btn { padding: 6px; border: 1px solid var(--border); border-radius: 6px; background: var(--bg); }
+.sb-plink-row .copy-btn:hover { border-color: var(--accent-dk); color: var(--accent); background: var(--bg); }
 .sb-plink {
   display: flex; align-items: center; gap: 9px; font-size: var(--t-sm);
   color: var(--text-mid); padding: 7px 10px; border: 1px solid var(--border);
-  border-radius: 6px; margin-bottom: 6px; background: var(--bg);
+  border-radius: 6px; background: var(--bg);
   text-decoration: none; transition: border-color 0.15s;
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
-.sb-plink:last-child { margin-bottom: 0; }
 .sb-plink:hover { border-color: var(--accent-dk); }
 .sb-plink i { font-size: var(--t-md); color: var(--accent); flex-shrink: 0; }
 

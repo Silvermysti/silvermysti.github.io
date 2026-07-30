@@ -308,7 +308,9 @@ a.research-doi:hover { color: var(--accent); }
   list-style: none; cursor: pointer; user-select: none;
   display: flex; align-items: center; gap: 8px; padding-top: 12px;
   font-family: var(--font-mono); font-size: var(--t-sm); color: var(--accent);
+  transition: font-weight 0.1s, color 0.15s;
 }
+.research-more > summary:hover { font-weight: 700; color: var(--accent-dk); }
 .research-more > summary::-webkit-details-marker { display: none; }
 .research-more > summary::after {
   content: "▾"; margin-left: auto; font-size: 0.85em; transition: transform 0.2s ease;

@@ -92,5 +92,14 @@
     });
   }
 
+  // ── ACCORDION: close other details when one opens ──
+  document.addEventListener('toggle', e => {
+    if (e.target.matches('details.research-more') && e.target.open) {
+      document.querySelectorAll('details.research-more').forEach(d => {
+        if (d !== e.target) d.removeAttribute('open');
+      });
+    }
+  }, true);
+
   // init
   renderTabs();

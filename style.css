@@ -209,9 +209,21 @@ body { font-family: var(--font-sans); background: var(--bg); color: var(--text-h
 }
 .mc-tab:hover { color: var(--text-mid); }
 .mc-tab.active { color: var(--text-hi); background: var(--bg); border-bottom-color: var(--accent); }
-.mc-tab .tab-close { font-size: var(--t-xs); opacity: 0; margin-left: 4px; transition: opacity 0.15s; }
-.mc-tab:hover .tab-close { opacity: 0.5; }
-.mc-tab.active .tab-close { opacity: 0.4; }
+.mc-tab .tab-close {
+  font-size: 11px; opacity: 0; margin-left: 4px;
+  padding: 1px 4px; border-radius: 4px;
+  transition: opacity 0.15s, color 0.15s, background 0.12s, transform 0.1s;
+  line-height: 1;
+}
+.mc-tab:hover .tab-close { opacity: 0.55; }
+.mc-tab.active .tab-close { opacity: 0.45; }
+.mc-tab .tab-close:hover {
+  opacity: 1 !important;
+  color: #e05c5c;
+  background: rgba(224, 92, 92, 0.15);
+  transform: scale(1.2);
+}
+.mc-tab .tab-close:active { transform: scale(0.95); }
 .mc-tab i { font-size: var(--t-sm); }
 
 .mc-body {
@@ -348,8 +360,8 @@ a.research-doi:hover { color: var(--accent); }
   margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid var(--border);
 }
 .rs-sec-label {
-  font-size: var(--t-xs); color: var(--accent);
-  letter-spacing: 0.12em; text-transform: uppercase;
+  font-size: var(--t-sm); font-weight: 700; color: var(--accent);
+  letter-spacing: 0.08em; text-transform: uppercase;
   font-family: var(--font-mono); display: flex; align-items: center; gap: 7px;
 }
 .rs-sec-label i { font-size: var(--t-sm); }

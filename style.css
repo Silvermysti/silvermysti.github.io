@@ -298,7 +298,7 @@ input, textarea, select { cursor: text; }
 .research-card:last-child { margin-bottom: 0; }
 .research-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px; gap: 10px; flex-wrap: wrap; }
 .research-title { font-size: var(--t-md); font-weight: 500; color: var(--text-hi); line-height: 1.45; }
-.research-date { font-size: var(--t-sm); color: var(--text-faint); white-space: nowrap; }
+.research-date { font-size: var(--t-sm); font-weight: 700; color: var(--text-faint); white-space: nowrap; }
 .research-venue { font-size: var(--t-sm); color: var(--accent); font-family: var(--font-mono); margin-bottom: 8px; }
 .research-desc { font-size: var(--t-base); color: var(--text-body); line-height: 1.85; margin-bottom: 10px; }
 .research-desc p { margin: 0 0 10px; }

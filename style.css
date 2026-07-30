@@ -144,13 +144,17 @@ body { font-family: var(--font-sans); background: var(--bg); color: var(--text-h
 .sb-nav-item {
   display: flex; align-items: center; gap: 9px;
   padding: clamp(7px,1vw,10px) clamp(12px,1.5vw,18px);
-  font-size: var(--t-sm); color: var(--text-dim);
-  font-family: var(--font-mono); border-left: 2px solid transparent;
-  cursor: pointer; transition: all 0.15s; user-select: none;
+  font-size: var(--t-sm); color: var(--text-mid);
+  font-family: var(--font-mono); border-left: 3px solid transparent;
+  cursor: pointer; transition: all 0.18s ease; user-select: none;
 }
-.sb-nav-item:hover { color: var(--text-hi); background: var(--nav-active); border-left-color: var(--text-dim); }
+.sb-nav-item:hover {
+  color: var(--text-hi); font-weight: 600;
+  background: var(--nav-active);
+  border-left-color: var(--accent-dk);
+}
 .sb-nav-item:hover .ico { color: var(--accent); }
-.sb-nav-item.active { color: var(--accent); border-left-color: var(--accent); background: var(--nav-active); }
+.sb-nav-item.active { color: var(--accent); font-weight: 600; border-left-color: var(--accent); background: var(--nav-active); }
 .sb-nav-item.active .ico { color: var(--accent); }
 .sb-nav-item i { font-size: var(--t-md); flex-shrink: 0; }
 /* hide text labels on narrow sidebar */
@@ -204,13 +208,14 @@ body { font-family: var(--font-sans); background: var(--bg); color: var(--text-h
 .mc-tab {
   padding: clamp(7px,1vw,10px) clamp(10px,1.5vw,16px);
   font-size: var(--t-xs); font-family: var(--font-mono);
-  color: var(--text-faint); border-right: 1px solid var(--border);
+  color: var(--text-mid); border-right: 1px solid var(--border);
   display: flex; align-items: center; gap: 5px;
-  white-space: nowrap; cursor: pointer; transition: color 0.15s;
+  white-space: nowrap; cursor: pointer;
+  transition: color 0.18s, background 0.18s, border-color 0.18s;
   user-select: none; border-bottom: 2px solid transparent; flex-shrink: 0;
 }
-.mc-tab:hover { color: var(--text-hi); background: var(--bg-card); border-bottom-color: var(--text-dim); }
-.mc-tab.active { color: var(--text-hi); background: var(--bg); border-bottom-color: var(--accent); }
+.mc-tab:hover { color: var(--text-hi); font-weight: 600; background: var(--nav-active); border-bottom-color: var(--accent-dk); }
+.mc-tab.active { color: var(--text-hi); font-weight: 600; background: var(--bg); border-bottom-color: var(--accent); }
 .mc-tab .tab-close {
   font-size: 14px; opacity: 0; margin-left: 6px;
   padding: 2px 5px; border-radius: 4px;

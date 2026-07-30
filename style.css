@@ -169,7 +169,7 @@ input, textarea, select { cursor: text; }
 .sb-nav-item {
   display: flex; align-items: center; gap: 9px;
   padding: clamp(7px,1vw,10px) clamp(12px,1.5vw,18px);
-  font-size: var(--t-sm); color: var(--text-mid);
+  font-size: var(--t-sm); color: var(--text-mid); font-weight: 500;
   font-family: var(--font-mono); border-left: 3px solid transparent;
   transition: all 0.18s ease; user-select: none;
 }
@@ -242,7 +242,7 @@ input, textarea, select { cursor: text; }
 .mc-tabs::-webkit-scrollbar { display: none; }
 .mc-tab {
   padding: clamp(7px,1vw,10px) clamp(10px,1.5vw,16px);
-  font-size: var(--t-xs); font-family: var(--font-mono);
+  font-size: var(--t-xs); font-family: var(--font-mono); font-weight: 500;
   color: var(--text-mid); border-right: 1px solid var(--border);
   display: flex; align-items: center; gap: 5px;
   white-space: nowrap;

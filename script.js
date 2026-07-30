@@ -18,7 +18,7 @@
     projects:         { icon: 'ico-code',       label: 'projects.py'        },
     honours:          { icon: 'ico-trophy',     label: 'honours.md'         },
     certifications:   { icon: 'ico-school',     label: 'certifications.md'  },
-    courses:          { icon: 'ico-code',       label: 'courses.md'         },
+    courses:          { icon: 'ico-code',       label: 'coursework.md'      },
     education:        { icon: 'ico-school',     label: 'education.md'       },
     skills:           { icon: 'ico-cpu',        label: 'skills.json'        },
     organisations:    { icon: 'ico-users',      label: 'organisations.md'   },

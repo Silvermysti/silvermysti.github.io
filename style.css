@@ -173,9 +173,14 @@ input, textarea, select { cursor: text; }
   font-family: var(--font-mono); border-left: 3px solid transparent;
   transition: all 0.18s ease; user-select: none;
 }
-/* Faint rule between nav entries; the last is skipped so it doesn't
+/* Rule between nav entries. A pseudo-element rather than border-bottom so it
+   can be rounded and inset from the edges; last one skipped so it doesn't
    double up with the border on .sb-bottom. */
-.sb-nav-item:not(:last-child) { border-bottom: 1.5px solid var(--border); }
+.sb-nav-item { position: relative; }
+.sb-nav-item:not(:last-child)::after {
+  content: ''; position: absolute; bottom: 0; left: 16px; right: 16px;
+  height: 1.75px; border-radius: 2px; background: var(--border);
+}
 .sb-nav-item:hover {
   color: var(--text-hi); font-weight: 600;
   background: var(--nav-active);
@@ -384,6 +389,9 @@ a.research-doi:hover { color: var(--accent); }
 .honour-sub { font-size: var(--t-sm); color: var(--accent); font-family: var(--font-mono); }
 .honour-date { font-size: var(--t-sm); color: var(--text-faint); }
 .honour-desc { font-size: var(--t-base); color: var(--text-body); line-height: 1.8; }
+/* Row of skill tags under a certification / coursework card. */
+.honour-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.honour-chips .honour-chip { margin-top: 0; }
 .honour-chip { display: inline-block; font-size: var(--t-xs); padding: 2px 8px; background: var(--chip-bg); border: 1px solid var(--border-hi); border-radius: 4px; color: var(--accent); font-family: var(--font-mono); margin-top: 6px; }
 
 /* ── RESUME SECTIONS (about.md) ── */

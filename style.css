@@ -60,10 +60,24 @@ body { font-family: var(--font-sans); background: var(--bg); color: var(--text-h
 [data-theme="dark"]  body { cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='24' viewBox='0 0 20 24'><path d='M3 2 L3 19 L7 15 L10 22 L13 21 L10 14 L15 14 Z' fill='%23c8506a' stroke='%23ffffff' stroke-width='2.4' stroke-linejoin='round' paint-order='stroke fill'/></svg>") 3 2, auto; }
 [data-theme="light"] body { cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='24' viewBox='0 0 20 24'><path d='M3 2 L3 19 L7 15 L10 22 L13 21 L10 14 L15 14 Z' fill='%23e8809c' stroke='%23211008' stroke-width='2.4' stroke-linejoin='round' paint-order='stroke fill'/></svg>") 3 2, auto; }
 
-a, button, [onclick], label, summary { cursor: pointer; }
-[data-theme="dark"]  :is(a, button, [onclick], label, summary) { cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='29' viewBox='-1 -1 22 32'><path d='M6.8 0.5L11.2 0.5L11.2 9.5L19 9.5L19 23.5L17.6 26.2L17.6 28.5L2.9 28.5L2.9 26.2L1 23.5L1 15.5L6.8 11Z' fill='%23c8506a' stroke='%23ffffff' stroke-width='2.6' stroke-linejoin='round' paint-order='stroke fill'/><path d='M13.15 9.5v3.2M15.1 9.5v3.2M17.05 9.5v3.2M6.8 11v10.5M6.3 24.6h2.1M10.9 24.6h2.9' fill='none' stroke='%23ffffff' stroke-width='1.4' stroke-linecap='round'/></svg>") 9 2, pointer; }
-[data-theme="light"] :is(a, button, [onclick], label, summary) { cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='29' viewBox='-1 -1 22 32'><path d='M6.8 0.5L11.2 0.5L11.2 9.5L19 9.5L19 23.5L17.6 26.2L17.6 28.5L2.9 28.5L2.9 26.2L1 23.5L1 15.5L6.8 11Z' fill='%23e8809c' stroke='%23211008' stroke-width='2.6' stroke-linejoin='round' paint-order='stroke fill'/><path d='M13.15 9.5v3.2M15.1 9.5v3.2M17.05 9.5v3.2M6.8 11v10.5M6.3 24.6h2.1M10.9 24.6h2.9' fill='none' stroke='%23211008' stroke-width='1.4' stroke-linecap='round'/></svg>") 9 2, pointer; }
 input, textarea, select { cursor: text; }
+
+/* Ring that trails the pointer and blooms open over anything clickable.
+   The outer div is moved by JS every frame; the inner span owns the
+   transition, so the two never fight over the same `transform`. */
+.cursor-ring { position: fixed; top: 0; left: 0; z-index: 9999; pointer-events: none; }
+.cursor-ring span {
+  display: block; width: 24px; height: 24px; margin: -12px 0 0 -12px;
+  border: 2px solid var(--accent); border-radius: 50%;
+  opacity: 0; transform: scale(0.3);
+  transition: opacity 0.22s ease, transform 0.22s ease, background 0.22s ease;
+}
+.cursor-ring.over span {
+  opacity: 1; transform: scale(1);
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+}
+/* No pointer to follow on touch screens. */
+@media (hover: none), (pointer: coarse) { .cursor-ring { display: none; } }
 
 /* ── FLUID TYPE SCALE ── */
 :root {
@@ -103,7 +117,7 @@ input, textarea, select { cursor: text; }
 .tb-right { display: flex; align-items: center; gap: 8px; }
 .theme-toggle {
   background: none; border: 1px solid var(--border); border-radius: 5px;
-  padding: 5px 9px; cursor: pointer; color: var(--text-dim);
+  padding: 5px 9px; color: var(--text-dim);
   font-size: var(--t-md); display: flex; align-items: center; gap: 4px;
   transition: border-color 0.2s, color 0.2s;
 }
@@ -153,7 +167,7 @@ input, textarea, select { cursor: text; }
   padding: clamp(7px,1vw,10px) clamp(12px,1.5vw,18px);
   font-size: var(--t-sm); color: var(--text-mid);
   font-family: var(--font-mono); border-left: 3px solid transparent;
-  cursor: pointer; transition: all 0.18s ease; user-select: none;
+  transition: all 0.18s ease; user-select: none;
 }
 .sb-nav-item:hover {
   color: var(--text-hi); font-weight: 600;
@@ -182,7 +196,7 @@ input, textarea, select { cursor: text; }
 .sb-contact-item i { font-size: var(--t-md); color: var(--accent); flex-shrink: 0; }
 .sb-contact-val { font-size: var(--t-sm); color: var(--text-body); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; }
 .copy-btn {
-  flex-shrink: 0; margin-left: auto; background: none; border: none; cursor: pointer;
+  flex-shrink: 0; margin-left: auto; background: none; border: none;
   color: var(--text-dim); padding: 2px 4px; border-radius: 4px;
   display: flex; align-items: center; transition: color 0.15s, background 0.15s;
 }
@@ -219,7 +233,7 @@ input, textarea, select { cursor: text; }
   font-size: var(--t-xs); font-family: var(--font-mono);
   color: var(--text-mid); border-right: 1px solid var(--border);
   display: flex; align-items: center; gap: 5px;
-  white-space: nowrap; cursor: pointer;
+  white-space: nowrap;
   transition: color 0.18s, background 0.18s, border-color 0.18s;
   user-select: none; border-bottom: 2px solid transparent; flex-shrink: 0;
 }
@@ -314,7 +328,7 @@ a.research-doi:hover { color: var(--accent); }
 /* Collapsible full-paper summary at the foot of each research card. */
 .research-more { margin-top: 14px; border-top: 1px solid var(--border-hi); }
 .research-more > summary {
-  list-style: none; cursor: pointer; user-select: none;
+  list-style: none; user-select: none;
   display: flex; align-items: center; gap: 8px; padding-top: 12px;
   font-family: var(--font-mono); font-size: var(--t-sm); color: var(--accent);
   transition: font-weight 0.1s, color 0.15s;
@@ -369,7 +383,7 @@ a.research-doi:hover { color: var(--accent); }
 .rs-sec {
   border: 1px solid var(--border); border-radius: 8px;
   padding: clamp(13px,2vw,18px); margin-top: 10px;
-  cursor: pointer; transition: border-color 0.15s, background 0.15s;
+  transition: border-color 0.15s, background 0.15s;
 }
 .rs-sec:hover { border-color: var(--accent-dk); background: var(--bg-card); }
 .rs-sec:first-of-type { margin-top: 16px; }
@@ -519,7 +533,7 @@ a.research-doi:hover { color: var(--accent); }
   object-position: center top;
   display: block;
   align-self: stretch;
-  cursor: default;
+  cursor: inherit;
 }
 .about-hero-text { flex: 1; min-width: 0; }
 

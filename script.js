@@ -101,5 +101,39 @@
     }
   }, true);
 
+  // ── CURSOR RING: circle that trails the pointer and opens over clickables ──
+  (function () {
+    const ring = document.querySelector('.cursor-ring');
+    // Nothing to follow on a touch screen, so don't run the loop there at all.
+    if (!ring || !matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+
+    // .mc-tab is the only clickable without an onclick attribute — the tab bar
+    // wires its clicks up in renderTabs() above.
+    const CLICKABLE = 'a, button, label, summary, [onclick], .mc-tab';
+    // How fast the ring catches up: 1 sticks to the pointer, lower = more trail.
+    const EASE = matchMedia('(prefers-reduced-motion: reduce)').matches ? 1 : 0.55;
+
+    let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0, placed = false;
+
+    document.addEventListener('mousemove', e => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      // First move: drop the ring straight onto the pointer instead of letting
+      // it glide in from the top-left corner.
+      if (!placed) { ringX = mouseX; ringY = mouseY; placed = true; }
+      const el = e.target;
+      ring.classList.toggle('over', el instanceof Element && !!el.closest(CLICKABLE));
+    });
+
+    document.addEventListener('mouseleave', () => ring.classList.remove('over'));
+
+    (function frame() {
+      ringX += (mouseX - ringX) * EASE;
+      ringY += (mouseY - ringY) * EASE;
+      ring.style.transform = `translate(${ringX}px, ${ringY}px)`;
+      requestAnimationFrame(frame);
+    })();
+  })();
+
   // init
   renderTabs();

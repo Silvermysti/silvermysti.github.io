@@ -35,7 +35,7 @@
       const t = TABS[id];
       const el = document.createElement('div');
       el.className = 'mc-tab' + (id === activeTab ? ' active' : '');
-      el.innerHTML = `<span class="ico"><svg width="13" height="13" style="stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round"><use href="#${t.icon}"/></svg></span>${t.label}<span class="tab-close" onclick="closeTab(event,'${id}')">✕</span>`;
+      el.innerHTML = `<span class="ico"><svg width="13" height="13" style="stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round"><use href="#${t.icon}"/></svg></span><span>${t.label.replace(/(\.\w+)$/, '<span class="ext">$1</span>')}</span><span class="tab-close" onclick="closeTab(event,'${id}')">✕</span>`;
       el.addEventListener('click', (e) => {
         if (!e.target.classList.contains('tab-close')) switchTab(id);
       });

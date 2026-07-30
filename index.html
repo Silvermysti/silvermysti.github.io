@@ -67,34 +67,34 @@
 
       <nav class="sb-nav">
         <div class="sb-nav-item active" onclick="openTab('about')">
-          <span class="ico"><svg width="1em" height="1em"><use href="#ico-user"/></svg></span><span>about.md</span>
+          <span class="ico"><svg width="1em" height="1em"><use href="#ico-user"/></svg></span><span>about<span class="ext">.md</span></span>
         </div>
         <div class="sb-nav-item" onclick="openTab('experience')">
-          <span class="ico"><svg width="1em" height="1em"><use href="#ico-briefcase"/></svg></span><span>experience.json</span>
+          <span class="ico"><svg width="1em" height="1em"><use href="#ico-briefcase"/></svg></span><span>experience<span class="ext">.json</span></span>
         </div>
         <div class="sb-nav-item" onclick="openTab('research')">
-          <span class="ico"><svg width="1em" height="1em"><use href="#ico-flask"/></svg></span><span>research.md</span>
+          <span class="ico"><svg width="1em" height="1em"><use href="#ico-flask"/></svg></span><span>research<span class="ext">.md</span></span>
         </div>
         <div class="sb-nav-item" onclick="openTab('projects')">
-          <span class="ico"><svg width="1em" height="1em"><use href="#ico-code"/></svg></span><span>projects.py</span>
+          <span class="ico"><svg width="1em" height="1em"><use href="#ico-code"/></svg></span><span>projects<span class="ext">.py</span></span>
         </div>
         <div class="sb-nav-item" onclick="openTab('honours')">
-          <span class="ico"><svg width="1em" height="1em"><use href="#ico-trophy"/></svg></span><span>honours.md</span>
+          <span class="ico"><svg width="1em" height="1em"><use href="#ico-trophy"/></svg></span><span>honours<span class="ext">.md</span></span>
         </div>
         <div class="sb-nav-item" onclick="openTab('certifications')">
-          <span class="ico"><svg width="1em" height="1em"><use href="#ico-school"/></svg></span><span>certifications.md</span>
+          <span class="ico"><svg width="1em" height="1em"><use href="#ico-school"/></svg></span><span>certifications<span class="ext">.md</span></span>
         </div>
         <div class="sb-nav-item" onclick="openTab('courses')">
-          <span class="ico"><svg width="1em" height="1em"><use href="#ico-code"/></svg></span><span>courses.md</span>
+          <span class="ico"><svg width="1em" height="1em"><use href="#ico-code"/></svg></span><span>courses<span class="ext">.md</span></span>
         </div>
         <div class="sb-nav-item" onclick="openTab('education')">
-          <span class="ico"><svg width="1em" height="1em"><use href="#ico-school"/></svg></span><span>education.md</span>
+          <span class="ico"><svg width="1em" height="1em"><use href="#ico-school"/></svg></span><span>education<span class="ext">.md</span></span>
         </div>
         <div class="sb-nav-item" onclick="openTab('skills')">
-          <span class="ico"><svg width="1em" height="1em"><use href="#ico-cpu"/></svg></span><span>skills.json</span>
+          <span class="ico"><svg width="1em" height="1em"><use href="#ico-cpu"/></svg></span><span>skills<span class="ext">.json</span></span>
         </div>
         <div class="sb-nav-item" onclick="openTab('organisations')">
-          <span class="ico"><svg width="1em" height="1em"><use href="#ico-user"/></svg></span><span>organisations.md</span>
+          <span class="ico"><svg width="1em" height="1em"><use href="#ico-user"/></svg></span><span>organisations<span class="ext">.md</span></span>
         </div>
       </nav>
 
@@ -109,6 +109,7 @@
           <div class="sb-block-label">// profiles</div>
           <div class="sb-plink-row"><a href="https://github.com/Silvermysti" target="_blank" class="sb-plink"><span class="ico"><svg width="1em" height="1em"><use href="#ico-github"/></svg></span>github.com/Silvermysti</a><button class="copy-btn" onclick="copyVal(this,'https://github.com/Silvermysti')" title="Copy URL"><svg width="1em" height="1em"><use href="#ico-copy"/></svg></button></div>
           <div class="sb-plink-row"><a href="https://www.linkedin.com/in/breeti/" target="_blank" class="sb-plink"><span class="ico"><svg width="1em" height="1em"><use href="#ico-linkedin"/></svg></span>in/breeti</a><button class="copy-btn" onclick="copyVal(this,'https://www.linkedin.com/in/breeti/')" title="Copy URL"><svg width="1em" height="1em"><use href="#ico-copy"/></svg></button></div>
+          <div class="sb-plink-row"><a href="https://scholar.google.com/citations?user=y_5PYu8AAAAJ&amp;hl=en" target="_blank" class="sb-plink"><span class="ico"><svg width="1em" height="1em"><use href="#ico-flask"/></svg></span>scholar.google.com</a><button class="copy-btn" onclick="copyVal(this,'https://scholar.google.com/citations?user=y_5PYu8AAAAJ&amp;hl=en')" title="Copy URL"><svg width="1em" height="1em"><use href="#ico-copy"/></svg></button></div>
           <div class="sb-plink-row"><a href="https://www.credly.com/users/breeti" target="_blank" class="sb-plink"><span class="ico"><svg width="1em" height="1em"><use href="#ico-school"/></svg></span>credly.com/breeti</a><button class="copy-btn" onclick="copyVal(this,'https://www.credly.com/users/breeti')" title="Copy URL"><svg width="1em" height="1em"><use href="#ico-copy"/></svg></button></div>
         </div>
       </div>
@@ -131,15 +132,13 @@
           <!-- hero -->
           <div class="about-hero">
             <img class="about-avatar" src="profile.png" alt="Breeti Bandyopadhyay">
-            <div class="about-hero-text">
-              <div class="about-greet">$ whoami · hi, I'm 👋</div>
-              <div class="about-h">Breeti <span>Bandyopadhyay</span></div>
-              <div class="about-role">$ cse @ shiv nadar university · 2024–2028</div>
-              <div class="about-bio">
-                <p>I'm a 2nd-year CS student (CGPA 9.25, Dean's List) who likes building things that actually run: <strong>LLM agent systems</strong>, machine-learning models, and the occasional computer-vision experiment.</p>
-                <p>Right now I'm a full-stack dev intern at <strong>Tech Mahindra</strong>, building multi-agent LLM pipelines. Before that I co-authored <strong>two computational-materials papers</strong> (Int. J. Hydrogen Energy, IF 8.3, and Surfaces &amp; Interfaces) and trained deep-learning models at a 5G research lab.</p>
-                <p>Off the clock I ship side projects: <strong>17 public repos</strong> and counting. Always up for research and engineering opportunities.</p>
-              </div>
+            <div class="about-greet">$ whoami · hi, I'm 👋</div>
+            <div class="about-h">Breeti <span>Bandyopadhyay</span></div>
+            <div class="about-role">$ cse @ shiv nadar university · 2024–2028</div>
+            <div class="about-bio">
+              <p>I'm a 2nd-year CS student (CGPA 9.25, Dean's List) who likes building things that actually run: <strong>LLM agent systems</strong>, machine-learning models, and the occasional computer-vision experiment.</p>
+              <p>Right now I'm a full-stack dev intern at <strong>Tech Mahindra</strong>, building multi-agent LLM pipelines. Before that I co-authored <strong>two computational-materials papers</strong> (Int. J. Hydrogen Energy, IF 8.3, and Surfaces &amp; Interfaces) and trained deep-learning models at a 5G research lab.</p>
+              <p>Off the clock I ship side projects: <strong>17 public repos</strong> and counting. Always up for research and engineering opportunities.</p>
             </div>
           </div>
 
@@ -150,7 +149,7 @@
           <div class="rs-sec" onclick="openTab('education')">
             <div class="rs-sec-head">
               <span class="rs-sec-label"><span class="ico"><svg width="14" height="14"><use href="#ico-school"/></svg></span>education</span>
-              <span class="rs-sec-link">education.md →</span>
+              <span class="rs-sec-link">education<span class="ext">.md</span> →</span>
             </div>
             <div class="rs-row">
               <div class="rs-row-left">
@@ -181,7 +180,7 @@
           <div class="rs-sec" onclick="openTab('experience')">
             <div class="rs-sec-head">
               <span class="rs-sec-label"><span class="ico"><svg width="1em" height="1em"><use href="#ico-briefcase"/></svg></span>experience</span>
-              <span class="rs-sec-link">experience.json →</span>
+              <span class="rs-sec-link">experience<span class="ext">.json</span> →</span>
             </div>
             <div class="rs-row">
               <div class="rs-row-left">
@@ -247,7 +246,7 @@
           <div class="rs-sec" onclick="openTab('research')">
             <div class="rs-sec-head">
               <span class="rs-sec-label"><span class="ico"><svg width="1em" height="1em"><use href="#ico-flask"/></svg></span>research</span>
-              <span class="rs-sec-link">research.md →</span>
+              <span class="rs-sec-link">research<span class="ext">.md</span> →</span>
             </div>
             <div class="rs-row">
               <div class="rs-row-left">
@@ -281,7 +280,7 @@
           <div class="rs-sec" onclick="openTab('projects')">
             <div class="rs-sec-head">
               <span class="rs-sec-label"><span class="ico"><svg width="1em" height="1em"><use href="#ico-code"/></svg></span>projects</span>
-              <span class="rs-sec-link">projects.py →</span>
+              <span class="rs-sec-link">projects<span class="ext">.py</span> →</span>
             </div>
             <div class="rs-row">
               <div class="rs-row-left">
@@ -325,7 +324,7 @@
           <div class="rs-sec" onclick="openTab('skills')">
             <div class="rs-sec-head">
               <span class="rs-sec-label"><span class="ico"><svg width="1em" height="1em"><use href="#ico-cpu"/></svg></span>skills</span>
-              <span class="rs-sec-link">skills.json →</span>
+              <span class="rs-sec-link">skills<span class="ext">.json</span> →</span>
             </div>
             <div class="rs-skills-row">
               <span class="rs-skill-cat">Languages</span>
@@ -353,7 +352,7 @@
           <div class="rs-sec" onclick="openTab('honours')">
             <div class="rs-sec-head">
               <span class="rs-sec-label"><span class="ico"><svg width="1em" height="1em"><use href="#ico-trophy"/></svg></span>honours</span>
-              <span class="rs-sec-link">honours.md →</span>
+              <span class="rs-sec-link">honours<span class="ext">.md</span> →</span>
             </div>
             <div class="rs-inline-list">
               <div class="rs-inline-item">
@@ -373,7 +372,7 @@
           <div class="rs-sec" onclick="openTab('certifications')">
             <div class="rs-sec-head">
               <span class="rs-sec-label"><span class="ico"><svg width="1em" height="1em"><use href="#ico-school"/></svg></span>certifications</span>
-              <span class="rs-sec-link">certifications.md →</span>
+              <span class="rs-sec-link">certifications<span class="ext">.md</span> →</span>
             </div>
             <div class="rs-inline-list">
               <div class="rs-inline-item">
@@ -395,7 +394,7 @@
           <div class="rs-sec" onclick="openTab('organisations')">
             <div class="rs-sec-head">
               <span class="rs-sec-label"><span class="ico"><svg width="1em" height="1em"><use href="#ico-user"/></svg></span>organisations</span>
-              <span class="rs-sec-link">organisations.md →</span>
+              <span class="rs-sec-link">organisations<span class="ext">.md</span> →</span>
             </div>
             <div class="rs-row">
               <div class="rs-row-left">

@@ -56,7 +56,10 @@
 /* ── RESET ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { height: 100%; }
-body { font-family: var(--font-sans); background: var(--bg); color: var(--text-hi); min-height: 100%; }
+body { font-family: var(--font-sans); background: var(--bg); color: var(--text-hi); min-height: 100%; cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='24' viewBox='0 0 20 24'><path d='M3 2 L3 19 L7 15 L10 22 L13 21 L10 14 L15 14 Z' fill='%23c8506a' stroke='%23ffffff' stroke-width='1.5' stroke-linejoin='round' paint-order='stroke fill'/></svg>") 3 2, auto; }
+
+a, button, [onclick], label, summary { cursor: pointer; }
+input, textarea, select { cursor: text; }
 
 /* ── FLUID TYPE SCALE ── */
 :root {
@@ -187,6 +190,8 @@ body { font-family: var(--font-sans); background: var(--bg); color: var(--text-h
 .sb-plink-row .sb-plink { margin-bottom: 0; flex: 1; min-width: 0; border-radius: 6px 0 0 6px; border-right: none; }
 .sb-plink-row .copy-btn { padding: 0 8px; border: 1px solid var(--border); border-radius: 0 6px 6px 0; border-left: none; background: var(--bg); display: flex; align-items: center; }
 .sb-plink-row .copy-btn:hover { border-color: var(--accent-dk); color: var(--accent); background: var(--bg); }
+.sb-plink-row:hover .sb-plink { border-color: var(--accent-dk); }
+.sb-plink-row:hover .copy-btn { border-color: var(--accent-dk); color: var(--accent); }
 .sb-plink {
   display: flex; align-items: center; gap: 9px; font-size: var(--t-sm);
   color: var(--text-mid); padding: 7px 10px; border: 1px solid var(--border);

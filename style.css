@@ -306,7 +306,8 @@ input, textarea, select { cursor: text; }
 .skill-group { background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; padding: 12px 13px; }
 .skill-cat { font-size: var(--t-xs); color: var(--text-faint); font-family: var(--font-mono); margin-bottom: 8px; }
 .skill-tags { display: flex; flex-wrap: wrap; gap: 5px; }
-.skill-tag { font-size: var(--t-sm); padding: 3px 8px; background: var(--tag-bg); border: 1px solid var(--tag-border); border-radius: 3px; color: var(--tag-text); font-family: var(--font-mono); }
+/* Same pink palette as .honour-chip so tags read consistently site-wide. */
+.skill-tag { font-size: var(--t-sm); padding: 3px 8px; background: var(--chip-bg); border: 1px solid var(--border-hi); border-radius: 3px; color: var(--accent); font-family: var(--font-mono); }
 
 /* ── TIMELINE ── */
 .tl-item { display: grid; grid-template-columns: 2px 1fr; gap: 0 16px; margin-bottom: 24px; }
@@ -500,10 +501,12 @@ a.research-doi:hover { color: var(--accent); }
 .skill-tag, .proj-tag, .rs-tag {
   transition: border-color 0.15s, color 0.15s, background 0.15s;
 }
-.skill-tag:hover, .proj-tag:hover {
+.proj-tag:hover {
   border-color: var(--accent-dk);
   color: var(--accent);
 }
+/* .skill-tag is already accent-coloured, so hover firms up the border instead. */
+.skill-tag:hover { border-color: var(--accent); background: var(--nav-active); }
 
 /* resume button shimmer */
 .resume-btn {

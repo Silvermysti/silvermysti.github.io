@@ -1,0 +1,204 @@
+%-------------------------
+% Jake's Resume Template
+% Author: Jake Gutierrez
+% Based off: https://github.com/jakeryang/resume
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%-----------HEADING-----------
+\begin{center}
+    \textbf{\Huge \scshape Breeti Bandyopadhyay} \\ \vspace{1pt}
+    \small
+    88904\,72117 $|$
+    \href{mailto:bandybreeti@gmail.com}{\underline{bandybreeti@gmail.com}} $|$
+    \href{https://linkedin.com/in/breeti-bandyopadhyay-68894b31a}{\underline{linkedin.com/in/breeti-bandyopadhyay-68894b31a}} $|$
+    \href{https://silvermysti.github.io}{\underline{silvermysti.github.io}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Shiv Nadar University}{Greater Noida, UP}
+      {B.Tech Computer Science and Engineering}{2024 -- 2028}
+      \resumeItemListStart
+        \resumeItem{CGPA: 9.25 $\cdot$ Pursuing a minor in Mathematics.}
+        \resumeItem{Dean's List (2024/25): ranked in the top 10\% of the Computer Science cohort.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Birla Balika Vidyapeeth}{Pilani, Rajasthan}
+      {Secondary and Senior Secondary (CBSE)}{2021 -- 2024}
+      \resumeItemListStart
+        \resumeItem{Class X: 97.6\% $|$ Class XII: 97\%}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Full-Stack Dev Intern}{May 2026 -- Jul 2026}
+      {Tech Mahindra}{NSEZ Noida}
+      \resumeItemListStart
+        \resumeItem{Engineered a multi-agent LLM system for automotive warranty claims: structured-output (Pydantic function-calling) decisioning across intake, coverage, fraud, and recommendation agents on a LangGraph pipeline with human-in-the-loop approval.}
+        \resumeItem{Built a bounded conversational intake agent with conditional vision-evidence requests; tuned prompts and structured decision logic across fast/standard model tiers (Groq / DeepSeek).}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Intern}{Jun 2025 -- Jul 2025}
+      {5G Use Case Lab, BITS Pilani}{Pilani, Rajasthan}
+      \resumeItemListStart
+        \resumeItem{Replicated a peer-reviewed IEEE paper end-to-end: VGG-style 1D CNN for automatic modulation classification on 80,000 examples from a 19.5 GB dataset (DeepSig RadioML 2018.01A), trained on CPU.}
+        \resumeItem{Engineered a confidence-based abstention gate lifting effective accuracy to 90\% on answered signals; validated using blind SNR estimation ($r = -0.996$) with no ground-truth labels.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------RESEARCH-----------
+\section{Research}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Research Collaborator}{Dec 2024 -- Jan 2025}
+      {Physics Department, BITS Pilani}{Pilani, Rajasthan}
+      \resumeItemListStart
+        \resumeItem{Co-authored a DFT study on reversible hydrogen storage in 2D holey graphyne, published in \textit{Int.\ J.\ Hydrogen Energy} (Impact Factor: 8.3); DOI: \href{https://doi.org/10.1016/j.ijhydene.2025.150044}{\underline{10.1016/j.ijhydene.2025.150044}}.}
+        \resumeItem{Conducted VASP simulations for structure optimisation and electronic analysis (DOS, band structure); evaluated adsorption metrics meeting the DOE target.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Hephaestus} $|$ \emph{Iterative Code Performance Optimiser}}{}
+          \resumeItemListStart
+            \resumeItem{Profiles binaries with Linux \texttt{perf}, feeds hardware counters (IPC, cache misses, branch mispredictions) to an LLM, and applies one optimisation at a time in a loop until code reaches within 5\% of theoretical CPU peak.}
+            \resumeItem{Weighted scoring (70\% runtime / 20\% IPC / 10\% cache miss rate) auto-rolls back ineffective changes; supports x86\_64, arm64, wasm32, riscv64 via Docker with a Go HTTP server + Python perf-agent backend and SvelteKit + Supabase frontend.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Warranty Claims Decision Engine} $|$ \emph{Multi-agent LLM Pipeline}}{}
+          \resumeItemListStart
+            \resumeItem{Automates warranty-claim decisions with a pipeline of agents that reads the complaint, checks coverage, estimates repair cost, and screens for fraud, escalating risky or high-value claims to a human manager.}
+            \resumeItem{Payouts are kept auditable by computing coverage and cost in plain code against a parts-and-policy database; the model only classifies and explains, so routine claims clear automatically.}
+            \resumeItem{\textbf{Stack:} Python, FastAPI, LangGraph, SQLAlchemy, Next.js / TypeScript, Groq / DeepSeek}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%-----------COURSES AND CERTIFICATIONS-----------
+\section{Courses \& Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{LinkedIn CoachIn Program (2026):} Selected among the top 100 women engineering students nationwide for intensive mentorship in DSA, problem-solving, and tech career preparation. \\
+      \textbf{DeepLearning.AI / Stanford University:} Advanced Learning Algorithms $\cdot$ Supervised Machine Learning: Regression and Classification.
+    }}
+ \end{itemize}
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Languages \& AI:} Python, Java, C $\cdot$ FastAPI, LangGraph, SQLAlchemy, LLM agent workflows \\
+      \textbf{ML / CV \& Tools:} Scikit-Learn, TensorFlow, MediaPipe, OpenCV $\cdot$ Git, Linux, VS Code, VESTA, VASP
+    }}
+ \end{itemize}
+
+
+%-----------HONOURS AND ACHIEVEMENTS-----------
+\section{Honours \& Achievements}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{State Topper, Rajasthan:} KAMP NASTA 2023 --- 1st in state out of 500,000+ participants. \\
+      \textbf{HackData SNU:} 3rd place, Shiv Nadar University's flagship national-level hackathon. \\
+      \textbf{School Rank 2:} Class XII (CBSE), Birla Balika Vidyapeeth.
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}

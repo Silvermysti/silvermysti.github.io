@@ -56,7 +56,9 @@
 /* ── RESET ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { height: 100%; }
-body { font-family: var(--font-sans); background: var(--bg); color: var(--text-hi); min-height: 100%; cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='24' viewBox='0 0 20 24'><path d='M3 2 L3 19 L7 15 L10 22 L13 21 L10 14 L15 14 Z' fill='%23c8506a' stroke='%23ffffff' stroke-width='1.5' stroke-linejoin='round' paint-order='stroke fill'/></svg>") 3 2, auto; }
+body { font-family: var(--font-sans); background: var(--bg); color: var(--text-hi); min-height: 100%; }
+[data-theme="dark"]  body { cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='24' viewBox='0 0 20 24'><path d='M3 2 L3 19 L7 15 L10 22 L13 21 L10 14 L15 14 Z' fill='%23c8506a' stroke='%23ffffff' stroke-width='1.5' stroke-linejoin='round' paint-order='stroke fill'/></svg>") 3 2, auto; }
+[data-theme="light"] body { cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='24' viewBox='0 0 20 24'><path d='M3 2 L3 19 L7 15 L10 22 L13 21 L10 14 L15 14 Z' fill='%23c8506a' stroke='%23211008' stroke-width='1.5' stroke-linejoin='round' paint-order='stroke fill'/></svg>") 3 2, auto; }
 
 a, button, [onclick], label, summary { cursor: pointer; }
 input, textarea, select { cursor: text; }

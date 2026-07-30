@@ -494,24 +494,25 @@ a.research-doi:hover { color: var(--accent); }
 }
 
 /* avatar-style monogram in sidebar top */
-.sb-avatar {
-  width: 38px; height: 38px; border-radius: 10px;
-  object-fit: cover; object-position: center top;
-  margin-bottom: 12px;
+.about-hero {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+  margin-bottom: 24px;
+}
+.about-avatar {
+  flex-shrink: 0;
+  width: 160px;
+  border-radius: 16px;
   border: 2px solid var(--accent);
-  box-shadow: 0 4px 14px -4px color-mix(in srgb, var(--accent) 50%, transparent);
-  cursor: pointer;
+  box-shadow: 0 4px 18px -4px color-mix(in srgb, var(--accent) 50%, transparent);
+  object-fit: cover;
+  object-position: center top;
   display: block;
-  transition: width 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
-              height 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
-              box-shadow 0.3s ease,
-              border-radius 0.3s ease;
+  align-self: stretch;
+  cursor: default;
 }
-.sb-avatar:hover {
-  width: 140px; height: 140px;
-  border-radius: 14px;
-  box-shadow: 0 8px 28px -4px color-mix(in srgb, var(--accent) 60%, transparent);
-}
+.about-hero-text { flex: 1; min-width: 0; }
 
 /* ── MOBILE BREAKPOINTS ── */
 @media (max-width: 900px) {
@@ -524,6 +525,8 @@ a.research-doi:hover { color: var(--accent); }
   .rs-row-right { text-align: left; }
   .tl-meta { flex-direction: column; gap: 2px; }
   .research-top { flex-direction: column; }
+  .about-hero { flex-direction: column; }
+  .about-avatar { width: 100%; height: 220px; }
 }
 .ov-hint {
   display: flex; align-items: center; gap: 8px;
@@ -571,7 +574,7 @@ body, .shell, .sb, .titlebar, .mc-tabs, .mc-body, .sb-top, .sb-nav-item,
   .layout { grid-template-columns: 56px 1fr; }
   .sb-top { padding: 12px 8px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
   .sb-name, .sb-role, .sb-badge { display: none; }
-  .sb-avatar { margin-bottom: 0; }
+  .about-avatar { width: 120px; }
   .sb-nav-item { padding: 10px 0; justify-content: center; gap: 0; }
   .sb-nav-item:hover { padding-left: 0; }
   .sb-nav-item .ico svg { width: 20px; height: 20px; }

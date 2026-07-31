@@ -48,7 +48,18 @@
     switchTab(id);
   }
 
+  // ── MOBILE NAV DRAWER ──
+  function toggleMobileNav() {
+    document.querySelector('.sb').classList.toggle('open');
+    document.querySelector('.sb-scrim').classList.toggle('open');
+  }
+  function closeMobileNav() {
+    document.querySelector('.sb').classList.remove('open');
+    document.querySelector('.sb-scrim').classList.remove('open');
+  }
+
   function switchTab(id) {
+    closeMobileNav();
     activeTab = id;
     // update nav
     document.querySelectorAll('.sb-nav-item').forEach((el, i) => {

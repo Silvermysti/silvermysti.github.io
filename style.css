@@ -347,14 +347,14 @@ a.research-doi:hover { color: var(--accent); }
 .research-more { margin-top: 14px; border-top: 1px solid var(--border-hi); }
 .research-more > summary {
   list-style: none; user-select: none; cursor: pointer;
-  display: flex; align-items: center; gap: 8px; padding-top: 12px;
+  display: flex; align-items: center; gap: 5px; padding-top: 12px;
   font-family: var(--font-mono); font-size: var(--t-sm); font-weight: 700; color: var(--accent);
   transition: color 0.15s;
 }
 .research-more > summary:hover { color: var(--accent-dk); }
 .research-more > summary::-webkit-details-marker { display: none; }
 .research-more > summary::after {
-  content: "▾"; margin-left: auto; font-size: 0.85em; transition: transform 0.2s ease;
+  content: "▾"; font-size: 0.85em; transition: transform 0.2s ease;
 }
 .research-more[open] > summary::after { transform: rotate(180deg); }
 .research-more-body { padding-top: 12px; max-width: 68ch; }

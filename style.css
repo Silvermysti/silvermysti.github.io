@@ -381,10 +381,10 @@ a.research-doi:hover { color: var(--accent); }
 .proj-icons a {
   display: inline-flex; align-items: center; justify-content: center;
   width: 28px; height: 28px; color: var(--accent); text-decoration: none;
-  font-size: var(--t-md); border: 1px solid var(--border-hi); border-radius: 6px;
-  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  font-size: 28px;
+  transition: color 0.15s;
 }
-.proj-icons a:hover { background: var(--chip-bg); border-color: var(--accent); }
+.proj-icons a:hover { color: var(--accent-dk); }
 .proj-desc { font-size: var(--t-base); color: var(--text-body); line-height: 1.8; margin-bottom: 10px; }
 .proj-tags { display: flex; flex-wrap: wrap; gap: 5px; }
 .proj-tag { font-size: var(--t-xs); padding: 3px 7px; background: var(--tag-bg); border: 1px solid var(--tag-border); border-radius: 3px; color: var(--tag-text); font-family: var(--font-mono); }

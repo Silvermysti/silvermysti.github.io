@@ -627,6 +627,16 @@ body, .shell, .sb, .titlebar, .mc-tabs, .mc-body, .sb-top, .sb-nav-item,
   .mc-tabs { display: none; }
   .edu-grid { grid-template-columns: 1fr; } .proj-grid { flex-direction: column; }
   .skills-row { grid-template-columns: 1fr 1fr; }
+
+  /* .rs-sec-link's visibility normally depends on :hover, which never fires
+     on touch, so on mobile give it a permanent chip look instead. */
+  .rs-sec { position: relative; }
+  .rs-sec-link {
+    color: var(--accent); font-weight: 700;
+    background: var(--chip-bg); border: 1px solid var(--border-hi); border-radius: 999px;
+    padding: 4px 10px;
+  }
+  .rs-sec:active { border-color: var(--accent-dk); background: var(--bg-card); }
 }
 
 /* ── TABLET: narrow icon-only sidebar ── */

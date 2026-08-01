@@ -344,21 +344,17 @@ a.research-doi:hover { color: var(--accent); }
 .research-authors b { color: var(--text-hi); font-weight: 500; }
 
 /* Collapsible full-paper summary at the foot of each research card. */
-.research-more { margin-top: 4px; }
+.research-more { margin-top: 14px; border-top: 1px solid var(--border-hi); }
 .research-more > summary {
-  list-style: none; user-select: none; cursor: pointer;
-  display: inline-flex; align-items: center; gap: 6px;
-  margin-top: 10px; padding: 6px 12px;
-  background: var(--chip-bg); border: 1px solid var(--border-hi); border-radius: 999px;
-  font-family: var(--font-mono); font-size: var(--t-sm); font-weight: 600; color: var(--accent);
-  min-height: 32px; box-sizing: border-box;
-  transition: background 0.15s, color 0.15s;
+  list-style: none; user-select: none;
+  display: flex; align-items: center; gap: 8px; padding-top: 12px;
+  font-family: var(--font-mono); font-size: var(--t-sm); color: var(--accent);
+  transition: font-weight 0.1s, color 0.15s;
 }
-.research-more > summary:hover,
-.research-more > summary:active { background: var(--accent); color: var(--bg-deeper); }
+.research-more > summary:hover { font-weight: 700; color: var(--accent-dk); }
 .research-more > summary::-webkit-details-marker { display: none; }
 .research-more > summary::after {
-  content: "▾"; font-size: 0.85em; transition: transform 0.2s ease;
+  content: "▾"; margin-left: auto; font-size: 0.85em; transition: transform 0.2s ease;
 }
 .research-more[open] > summary::after { transform: rotate(180deg); }
 .research-more-body { padding-top: 8px; }

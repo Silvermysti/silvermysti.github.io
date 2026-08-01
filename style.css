@@ -381,7 +381,7 @@ a.research-doi:hover { color: var(--accent); }
 .proj-icons a {
   display: inline-flex; align-items: center; justify-content: center;
   width: 28px; height: 28px; color: var(--accent); text-decoration: none;
-  font-size: 28px;
+  font-size: 22px;
   transition: color 0.15s;
 }
 .proj-icons a:hover { color: var(--accent-dk); }

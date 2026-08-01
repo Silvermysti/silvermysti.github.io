@@ -344,7 +344,7 @@ a.research-doi:hover { color: var(--accent); }
 .research-authors b { color: var(--text-hi); font-weight: 500; }
 
 /* Collapsible full-paper summary at the foot of each research card. */
-.research-more { margin-top: 14px; border-top: 1px solid var(--border-hi); }
+.research-more { margin-top: 14px; border-top: 2px solid var(--border-hi); }
 .research-more > summary {
   list-style: none; user-select: none; cursor: pointer;
   display: flex; align-items: center; gap: 5px; padding-top: 12px;

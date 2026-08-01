@@ -343,22 +343,18 @@ a.research-doi:hover { color: var(--accent); }
 .research-authors { font-size: var(--t-sm); color: var(--text-mid); margin-bottom: 8px; line-height: 1.6; }
 .research-authors b { color: var(--text-hi); font-weight: 500; }
 
-/* Collapsible full-paper summary at the foot of each research card.
-   Styled as a bordered chip button (matches .research-scholar) instead of a
-   plain text row, so it reads as clearly interactable at a glance. */
-.research-more { margin-top: 12px; }
+/* Collapsible full-paper summary at the foot of each research card. */
+.research-more { margin-top: 14px; border-top: 1px solid var(--border-hi); }
 .research-more > summary {
   list-style: none; user-select: none; cursor: pointer;
-  display: inline-flex; align-items: center; gap: 6px;
-  padding: 5px 11px;
-  border: 1px solid var(--border-hi); border-radius: 4px;
-  font-family: var(--font-mono); font-size: var(--t-sm); font-weight: 600; color: var(--accent);
-  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  display: flex; align-items: center; gap: 8px; padding-top: 12px;
+  font-family: var(--font-mono); font-size: var(--t-sm); font-weight: 700; color: var(--accent);
+  transition: color 0.15s;
 }
-.research-more > summary:hover { background: var(--chip-bg); border-color: var(--accent); }
+.research-more > summary:hover { color: var(--accent-dk); }
 .research-more > summary::-webkit-details-marker { display: none; }
 .research-more > summary::after {
-  content: "▾"; font-size: 0.85em; transition: transform 0.2s ease;
+  content: "▾"; margin-left: auto; font-size: 0.85em; transition: transform 0.2s ease;
 }
 .research-more[open] > summary::after { transform: rotate(180deg); }
 .research-more-body { padding-top: 12px; max-width: 68ch; }
